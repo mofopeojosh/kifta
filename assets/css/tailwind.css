@@ -1,0 +1,66 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+.bg-dark{
+  background-color: #151E29;
+  @apply text-white;
+}
+.bg-theme{
+  background-color: rgb(138, 125, 234);
+}
+.main{
+  min-height: 50vh;
+}
+.app-btn{
+  vertical-align: middle;
+  @apply bg-dark rounded-md px-4 pb-3 pt-2;
+}
+.text-dark{
+  color: #151E29;
+}
+.text-light {
+  color: #B1B0B8;
+}
+.bg-light{
+  background-color: #f8f7fa;
+}
+.app-btn-sm{
+  @apply bg-dark rounded-sm px-2 py-1 text-xs;
+}
+.app-card{
+  @apply rounded-md border text-dark shadow-lg border-purple-500 p-6;
+}
+.product-title{
+  @apply text-5xl font-bold mb-10;
+}
+
+.product-subtitle{
+  @apply text-2xl font-bold mb-4 mt-10;
+}
+.product-subtitle-sm{
+  @apply text-lg font-semibold mb-2 mt-6;
+}
+.page-banner{
+  @apply py-16;
+}
+.page-banner-title{
+  @apply text-6xl;
+}
+.page-navigation .menu-item.active{
+  @apply border-l-2 border-purple-500 bg-purple-200;
+}
+.page-navigation .menu-item:hover{
+  @apply bg-purple-200;
+}
+.product-paragraph{
+  @apply mb-4 text-dark
+}
+.border-show table, .border-show tr, .border-show td, .border-show th{
+  @apply border border-gray-400;
+}
+tr, td, th{
+  @apply p-3;
+}
