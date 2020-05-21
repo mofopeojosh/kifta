@@ -10,6 +10,7 @@
       FireLaser is a Linear Heat Detector System specifically designed for use in Special Hazard fire detection
       applications.
     </p>
+    <img src="/images/kifta-FireLaser.jpg" style="height: 300px;" alt="Firelaser DTS">
     <p class="product-paragraph">
       The Fire Laser Distributed Temperature Sensing (DTS) system connects to a distributed fiber optic cable (FireFiber)
       and determines temperature and distance data at thousands of points along the length of the cable. The fiber optic
@@ -34,7 +35,7 @@
     <br>
     <p class="product-paragraph">
       The
-      <nuxt-link to="/products/maxview">
+      <nuxt-link class="app-link" to="/products/maxview">
         Maxview
       </nuxt-link>
       Horizon platform is a very versatile platform which provides information at all points along
@@ -264,8 +265,7 @@
           </h5>
           <p class="product-paragraph">
             Kifta is ISO 9001 certified and undergoes a rigorous continuous improvement program and tests all of
-            its
-            products to leading international standards
+            its products to leading international standards
           </p>
           <ul class="list-disc px-5">
             <li>Extensive environmental testing on all products</li>

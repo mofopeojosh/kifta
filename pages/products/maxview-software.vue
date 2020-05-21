@@ -7,8 +7,8 @@
       Max View Integrated Monitoring
     </h3>
     <p class="product-paragraph">
-      The MaxView integrated monitoring platform provides operators with a fully customisable system with advanced
-      visualisation and analytics. MaxView is a truly versatile solution and has been used in a wide range of industries
+      The Max View integrated monitoring platform provides operators with a fully customisable system with advanced
+      visualisation and analytics. Max View is a truly versatile solution and has been used in a wide range of industries
       including power utilities, structural health, processing, refining and pipeline monitoring.
     </p>
     <p class="product-paragraph">
@@ -27,7 +27,7 @@
     </ul>
     <br>
     <p class="product-paragraph">
-      MaxView Software Core Functions:
+      Max View Software Core Functions:
     </p>
     <ul class="list-disc px-5">
       <li>Data export and import</li>
@@ -49,13 +49,17 @@
             Interface
           </TabMenuItem>
         </template>
-        <template v-slot:specifications />
+        <template v-slot:specifications>
+          <img src="/images/kifta-maxview-specification.png" alt="Maxview">
+        </template>
 
-        <template v-slot:technology />
+        <template v-slot:technology>
+          <img src="/images/kifta-maxview-technology.png" alt="Maxview">
+        </template>
 
         <template v-slot:interface>
           <h5 class="product-subtitle-sm">
-            System Integration – The Maxview Advantage
+            System Integration – The Max View Advantage
           </h5>
           <p class="product-paragraph">
             You decide how to configure your user interface. Intuitive parent-child page hierarchy allows you to have a
@@ -67,6 +71,7 @@
             Dynamically linked images can be placed as required on the site overview and can link through to real time
             sensor information, real time video feeds and intelligent, zone based alarms can be configured as required.
           </p>
+          <img src="/images/kifta-maxview-interface.png" alt="Maxview">
         </template>
       </TabNavigation>
     </div>

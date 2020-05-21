@@ -10,6 +10,7 @@
       The FenceSentry series of Distributed Acoustic Sensors (DAS) are optimised for Perimeter Intrusion Detection
       (PIDS) and provides detection and locating of intrusion events with minimal nuisance events and false alarms.
     </p>
+    <img src="/images/kifta-FaceSentry.png" style="height: 300px;" alt="Horizon Das">
     <ul class="list-disc px-5">
       <li>Location of temperature events to within 1m</li>
       <li>Based on single fiber optic sensing cable. No individual sensors, no metal or moving parts</li>
@@ -26,7 +27,7 @@
     <br>
     <p class="product-paragraph">
       The
-      <nuxt-link to="/products/maxview">
+      <nuxt-link class="app-link" to="/products/maxview">
         Maxview
       </nuxt-link>
       Horizon platform is a very versatile platform which provides information at all points along

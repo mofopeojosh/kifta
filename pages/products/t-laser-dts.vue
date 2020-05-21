@@ -13,6 +13,7 @@
       The T-Laser DTS has been designed with safety in mind and has been tested to the industry’s most rigorous
       standards. The system can be used in many monitoring fields including:
     </p>
+    <img src="/images/kifta-T-Laser.jpg" style="height: 300px;" alt="T Laser">
     <ul class="list-disc px-5">
       <li>Tunnel fire detection</li>
       <li>Power cable monitoring</li>

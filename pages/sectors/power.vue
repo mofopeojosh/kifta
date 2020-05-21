@@ -8,11 +8,11 @@
     </h3>
     <p class="product-paragraph">
       When used in conjunction with a proactive maintenance approach, Kifta’s distributed fiber optic
-      <nuxt-link to="/technology/distributed-acoustic-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-acoustic-sensing">
         acoustic
       </nuxt-link>
       and
-      <nuxt-link to="/technology/distributed-temperature-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
         temperature
       </nuxt-link>
       sensing systems provide the operator with real time critical information on their network. This assists in
@@ -45,12 +45,12 @@
           </h5>
           <p>
             Below are some of the applications within the power sector that utilize Kifta’s range of
-            <nuxt-link to="/products">
+            <nuxt-link class="app-link" to="/products">
               distributed temperature and acoustic fiber optic sensors
             </nuxt-link>
             and intelligent software solutions. For the power sector,
             Kifta has developed the
-            <nuxt-link to="/technology/real-time-thermal-rating/">
+            <nuxt-link class="app-link" to="/technology/real-time-thermal-rating/">
               Real Time Thermal Rating (RTTR)
             </nuxt-link>
             software which has dynamic cable rating algorithms developed according to CIGRE and IEC60287.
@@ -127,6 +127,10 @@
             to interface with industry standard communication protocols, enables us to tailor the system to meet your
             specific needs.
           </p>
+          <h5 class="product-subtitle-sm">
+            RTTR System Overview
+          </h5>
+          <img src="/images/kifta-RTTR.jpg" alt="Real Time Thermal Rating">
         </template>
 
         <template v-slot:references>

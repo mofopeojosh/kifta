@@ -34,16 +34,24 @@
       capacity (or thermal headroom) and are able to indicate whether areas are stressed (overheated) or in fact have
       more capacity than originally anticipated.
     </p>
+    <img src="/images/kifta-RTTR.jpg" alt="Real Time Thermal Rating">
     <h3 class="product-subtitle">
       Real Time Thermal Rating Systems & Distributed Temperature Sensing Instruments
     </h3>
     <p class="product-paragraph">
-      The temperature of an asset itself, such as a power cable, is key for RTTR, as this should not increase above its
+      The temperature of an asset itself, such as a
+      <nuxt-link class="app-link" to="/sectors/power-cable-monitoring">
+        power cable
+      </nuxt-link>
+      , is key for RTTR, as this should not increase above its
       design limits. This can be measured continuously if equipment utilizes a Distributed Temperature Sensing (DTS)
       system, otherwise this can only be estimated.
     </p>
     <p class="product-paragraph">
-      Distributed temperature sensing fibers are installed along the length of the power cable (sometimes inside the
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
+        Distributed temperature
+      </nuxt-link>
+      sensing fibers are installed along the length of the power cable (sometimes inside the
       construction of the power cable itself). The cable can also be utilized for telecoms purposes as DTS systems
       typically utilise standard telecoms fiber optics.
     </p>

@@ -161,6 +161,7 @@
             <li>Components to telecom standards > 25 years MTBF</li>
             <li>Products are designed for low maintenance and cost of ownership (e.g. fan free design..)</li>
           </ul>
+          <img src="/images/kifta-pipeline-application.png" alt="Pipeline">
         </template>
       </TabNavigation>
     </div>

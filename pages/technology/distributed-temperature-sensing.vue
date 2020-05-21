@@ -12,13 +12,22 @@
       sensing system is that it provides a continuous (or distributed) temperature profile along the length of the
       sensing cable and not at discrete sensing points which must be pre-determined.
     </p>
+    <img src="/images/kifta-FireLaser.jpg" style="height: 300px;" alt="Firelaser DTS">
     <h3 class="product-subtitle">
       DTS systems by Kifta
     </h3>
 
     <ul class="list-disc px-5">
-      <li> FireLaser – DTS</li>
-      <li> T-Laser – DTS</li>
+      <li>
+        <nuxt-link class="app-link" to="/products/fire-laser-dts">
+          FireLaser – DTS
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link class="app-link" to="/products/t-laser-dts">
+          T-Laser – DTS
+        </nuxt-link>
+      </li>
     </ul>
     <br>
 
@@ -51,7 +60,12 @@
       there is an inverse relationship with measurement resolution, range and sampling time i.e. the temperature
       resolution degrades with range and improves the longer time you acquire data for a specific measurement.
     </p>
-
+    <div class="flex flex-col items-center">
+      <img src="/images/kifta-dts-performance.png" alt="Distributed Temperature Sensing">
+      <div class="bg-light p-3 mt-2 font-bold">
+        Temperature resolution performance of the Bandweaver T-Laser DTS
+      </div>
+    </div>
     <h5 class="product-subtitle-sm">
       Distributed Temperature Sensing – Raman Measurement Principle
     </h5>
@@ -63,7 +77,12 @@
       while the so-called Stokes band is practically independent of temperature. The local temperature of the optical
       fibre is derived from the ratio of the anti-Stokes and Stokes light intensities.
     </p>
-
+    <div class="flex flex-col items-center">
+      <img src="/images/kifta-dts-strokes.jpg" alt="Distributed Temperature Sensing">
+      <div class="bg-light p-3 mt-2 font-bold">
+        Profile with Rayleigh and Stokes Bands
+      </div>
+    </div>
     <h5 class="product-subtitle-sm">
       Measuring Principle – OTDR And OFDR Technology
     </h5>
@@ -79,6 +98,7 @@
       and the backscattered light is analysed. From the time it takes the backscattered light to return to the detection
       unit it is possible to locate the location of the temperature event.
     </p>
+    <img src="/images/kifta-das-tech.jpg" alt="Distributed Temperature Sensing">
     <p class="product-paragraph">
       Alternative DTS evaluation units deploy the method of Optical Frequency Domain Reflectometry (OFDR). The OFDR
       system provides information on the local characteristic only when the backscatter signal detected during the
