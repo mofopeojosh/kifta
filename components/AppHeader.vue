@@ -1,7 +1,9 @@
 <template>
   <header class="flex items-center justify-between bg-dark p-6">
     <div class="h-10">
-      <h2 class="text-xl">Kifta Technologies</h2>
+      <nuxt-link to="/">
+        <img src="/images/logo-white.png" class="h-10" alt="Logo">
+      </nuxt-link>
     </div>
     <ul class="flex text-white items-center">
       <li v-for="(menu, key) in menuConfig" :key="key" class="menu-item">
@@ -22,9 +24,9 @@
         </div>
       </li>
       <li class="menu-item">
-        <button class="bg-purple-500 rounded-md px-3 pt-2 pb-3">
+        <nuxt-link to="/get-a-quote" class="app-btn-theme">
           Get a Quote
-        </button>
+        </nuxt-link>
       </li>
     </ul>
   </header>
@@ -43,7 +45,7 @@ export default {
         },
         {
           name: 'About',
-          path: '#'
+          path: '/about'
         },
         {
           name: 'Sectors',
@@ -128,6 +130,18 @@ export default {
             {
               name: 'FenceSentry',
               path: '/products/face-sentry'
+            },
+            {
+              name: 'ROV',
+              path: '/products/rov'
+            },
+            {
+              name: 'UAV',
+              path: '/products/uav'
+            },
+            {
+              name: 'AUV',
+              path: '/products/auv'
             }
           ]
         },
@@ -141,7 +155,7 @@ export default {
         },
         {
           name: 'Contact',
-          path: '#'
+          path: '/contact'
         }
       ]
     }
@@ -160,7 +174,7 @@ export default {
     padding: 10px;
   }
   .menu-item-dropdown {
-    background-color: #151E29;
+    background-color: #001c40;
     min-width: 150px;
     @apply absolute hidden rounded-md items-center my-4 shadow-md pt-6 top-0 z-10;
   }
@@ -175,7 +189,7 @@ export default {
   .menu-item-dropdown .menu-dropdown-item:hover,
   .menu-item-dropdown .menu-dropdown-item:focus {
     background-color: #f8f7fa;
-    color: #151E29;
+    color: #001c40;
   }
 
   .menu-item:hover .menu-item-dropdown,

@@ -10,6 +10,7 @@
       The Kifta Horizon technology is a sophisticated Distributed Acoustic Sensing (DAS) technology which
       forms a key part of a perimeter monitoring and intrusion detection solution.
     </p>
+    <img src="/images/kifta-horizon-das.jpg" style="height: 300px;" alt="Horizon Das">
     <ul class="list-disc px-5">
       <li>High performance intrusion detection solution</li>
       <li>Simple installation</li>
@@ -25,7 +26,7 @@
     <br>
     <p class="product-paragraph">
       The
-      <nuxt-link to="/products/maxview">
+      <nuxt-link class="app-link" to="/products/maxview">
         Maxview
       </nuxt-link>
       Horizon platform is a very versatile platform which provides information at all points along

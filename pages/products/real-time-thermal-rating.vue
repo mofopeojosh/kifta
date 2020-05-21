@@ -20,10 +20,10 @@
       <li>Power generation, transmission and substations</li>
       <li>Overhead Lines utilizing OPPC</li>
     </ul>
-    <br>
+    <img src="/images/kifta-RTTR.jpg" alt="Real Time Thermal Rating">
     <p class="product-paragraph">
       The
-      <nuxt-link to="/products/maxview">
+      <nuxt-link class="app-link" to="/products/maxview">
         Maxview
       </nuxt-link>
       Horizon platform is a very versatile platform which provides information at all points along
@@ -175,6 +175,8 @@
         </template>
 
         <template v-slot:interface>
+          <img src="/images/kifta-RTTR-interface.jpg" alt="Real Time Thermal Rating">
+
           <h5 class="product-subtitle-sm">
             Advanced Visualisation and User Friendly Interface
           </h5>

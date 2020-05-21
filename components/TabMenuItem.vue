@@ -23,7 +23,7 @@ export default {
     },
     sm: {
       type: Boolean,
-      required: true
+      required: false
 
     }
   }

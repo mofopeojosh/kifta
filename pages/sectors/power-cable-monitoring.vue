@@ -10,10 +10,10 @@
       Distributed sensing technology has been prevalent in the power and utility sector since the 1980s and the largest
       area where this technology is commonly used is in the power cable monitoring. Distributed sensing technology
       includes
-      <nuxt-link to="/technology/distributed-temperature-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
         distributed temperature sensing,
       </nuxt-link>
-      <nuxt-link to="/technology/distributed-acoustic-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-acoustic-sensing">
         distributed acoustic sensing
       </nuxt-link>
       and to a lesser degree distributed strain
@@ -30,12 +30,12 @@
     <p class="product-paragraph">
       Due to the evolution of the technology most power cable condition monitoring applications have historically been
       associated with
-      <nuxt-link to="/technology/distributed-temperature-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
         distributed temperature sensing
       </nuxt-link>
       .
       Increasingly, however,
-      <nuxt-link to="/technology/distributed-acoustic-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-acoustic-sensing">
         distributed acoustic sensing
       </nuxt-link>
       is being utilized in more applications.
@@ -57,10 +57,10 @@
         the vicinity of the cable
       </li>
     </ul>
-    <br>
+    <img src="/images/kifta-power-cable-installation.png" alt="Power Cable Monitoring">
     <p class="product-paragraph">
       For
-      <nuxt-link to="/technology/distributed-temperature-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
         distributed temperature sensing
       </nuxt-link>
       , one of the key factors in the configuration of the system has been the position of the fiber optic sensing cable
@@ -69,12 +69,13 @@
       design or installation issues around splice joints) and so in many cases the DTS fiber sensing element is attached
       to the surface of the power cable configuration (or in the vicinity).
     </p>
+    <img src="/images/kifta-power-cable-positioning.png" alt="Power Cable Monitoring">
 
     <h3 class="product-subtitle">
       Distributed Acoustic Sensing Applications For Power Cable Monitoring
     </h3>
     <p class="product-paragraph">
-      <nuxt-link to="/technology/distributed-acoustic-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-acoustic-sensing">
         Distributed acoustic sensing
       </nuxt-link>
       is a more recent development but acceptance is growing quickly within the power cable monitoring segment. Some of
@@ -127,11 +128,11 @@
     </h3>
     <p class="product-paragraph">
       Although less common than
-      <nuxt-link to="/technology/distributed-temperature-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-temperature-sensing">
         distributed temperature sensing
       </nuxt-link>
       and
-      <nuxt-link to="/technology/distributed-acoustic-sensing">
+      <nuxt-link class="app-link" to="/technology/distributed-acoustic-sensing">
         distributed acoustic sensing
       </nuxt-link>
       , there have been a number of applications for distributed strain monitoring, including:
@@ -165,12 +166,17 @@
       actively monitoring strain during installation – care can be taken to reduce strains and prevent mechanical damage
       to the cables.
     </p>
-
+    <div class="flex flex-col items-center">
+      <img src="/images/kifta-power-cable-damaged.png" alt="Distributed Temperature Sensing">
+      <div class="bg-light p-3 mt-2 font-bold">
+        Example of power cable damaged during installation
+      </div>
+    </div>
     <h3 class="product-subtitle">
       Power Cable Thermal Rating
     </h3>
     <p class="product-paragraph">
-      <nuxt-link to="/technology/real-time-thermal-rating">
+      <nuxt-link class="app-link" to="/technology/real-time-thermal-rating">
         Real Time Thermal Rating
       </nuxt-link>
       is a methodology used within the power and utility sector to assess operational thermal rating of equipment. This
@@ -187,7 +193,7 @@
       In the case of power cables RTTR systems is also referred to as dynamic cable rating systems.
     </p>
     <p class="product-paragraph">
-      <nuxt-link to="/technology/real-time-thermal-rating">
+      <nuxt-link class="app-link" to="/technology/real-time-thermal-rating">
         Real time thermal rating
       </nuxt-link>
       systems typically use real-time data taken from real environment conditions and loading rather than relying on
@@ -195,6 +201,7 @@
       headroom). RTTR systems are able to indicate whether areas are stressed (overheated) or in fact have more capacity
       than originally anticipated.
     </p>
+    <img src="/images/kifta-power-cable-RTTR.jpg" alt="Distributed Temperature Sensing">
   </div>
 </template>
 

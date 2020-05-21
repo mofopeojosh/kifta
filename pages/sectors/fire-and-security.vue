@@ -39,14 +39,14 @@
           <ul class="list-disc px-5">
             <li>
               Airport –
-              <nuxt-link to="/secotrs/fire-and-security/linear-heat-detection">
+              <nuxt-link class="app-link" to="/secotrs/fire-and-security/linear-heat-detection">
                 linear heat detection
               </nuxt-link>
               and perimeter security (PIDS)
             </li>
             <li>
               Tunnels –
-              <nuxt-link to="/secotrs/fire-and-security/linear-heat-detection">
+              <nuxt-link class="app-link" to="/secotrs/fire-and-security/linear-heat-detection">
                 linear heat detection
               </nuxt-link>
             </li>
@@ -79,6 +79,7 @@
           <h5 class="product-subtitle-sm">
             Mining and minerals – conveyor belt
           </h5>
+          <img src="/images/kifta-fire-application.jpg" alt="Real Time Thermal Rating">
         </template>
 
         <template v-slot:features-and-benefits>

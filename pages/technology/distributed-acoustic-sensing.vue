@@ -17,6 +17,7 @@
     <h3 class="product-subtitle">
       Distributed Acoustic Sensing Technology
     </h3>
+    <img src="/images/kifta-horizon-das.jpg" style="height: 300px;" alt="Distributed Acoustic Sensing">
     <p class="product-paragraph">
       Typically DAS technology uses a standard telecoms fiber optic cable and specialised fibers are only required at
       elevated temperatures (greater than 100°C). The sensing fiber is typically based on single-mode fibers although
@@ -27,7 +28,7 @@
       2 channels that can operate simultaneously e.g. the Kifta Horizon DAS100 can measure up to 100km with a 2
       channel unit measuring 50km in either direction.
     </p>
-
+    <img src="/images/kifta-das-measurement.png" alt="Distributed Acoustic Sensing">
     <h3 class="product-subtitle">
       Distributed Acoustic Sensing Theory And Applications
     </h3>
@@ -46,6 +47,7 @@
       The majority of the distributed acoustic sensing systems on the market today are based on a principle known as
       Coherent Optical Time Domain Reflectometry (COTDR).
     </p>
+    <img src="/images/kifta-das-tech.jpg" alt="Distributed Acoustic Sensing">
     <h5 class="product-subtitle-sm">
       Spatial Resolution And Spatial Sampling Period
     </h5>
@@ -105,8 +107,8 @@
       software is interfaced with an existing 3rd party SCADA, control or security software package in which case the
       event will be highlighted in the 3rd party software.
     </p>
-
-    <h3 class="product-subtitle">
+    <img src="/images/kifta-maxview-interface.png" alt="Distributed Acoustic Sensing">
+    <h3 class="mt-0 product-subtitle">
       Distributed Acoustic Sensing Applications
     </h3>
     <p class="product-paragraph">

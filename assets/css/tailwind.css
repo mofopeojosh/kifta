@@ -4,19 +4,20 @@
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
-.bg-dark{
-  background-color: #151E29;
-  @apply text-white;
-}
-.bg-theme{
-  background-color: rgb(138, 125, 234);
-}
+
 .main{
   min-height: 50vh;
 }
-.app-btn{
-  vertical-align: middle;
-  @apply bg-dark rounded-md px-4 pb-3 pt-2;
+
+.bg-dark{
+  background-color: #001c40;
+  @apply text-gray-200;
+}
+.bg-light{
+  background-color: #f8f7fa;
+}
+.bg-theme{
+  background-color: rgb(138, 125, 234);
 }
 .text-dark{
   color: #151E29;
@@ -24,19 +25,58 @@
 .text-light {
   color: #B1B0B8;
 }
-.bg-light{
-  background-color: #f8f7fa;
+
+.app-btn{
+  vertical-align: middle;
+  @apply bg-dark rounded-md px-5 pb-3 pt-2;
+}
+.app-btn-theme{
+  background-color: rgb(138, 125, 234);
+  @apply rounded-md px-4 pt-2 pb-3;
+}
+.btn:hover{
+  @apply opacity-75;
 }
 .app-btn-sm{
-  @apply bg-dark rounded-sm px-2 py-1 text-xs;
+  @apply bg-dark rounded-md px-3 py-1;
+}
+.app-link{
+  @apply text-purple-500;
+}
+.app-link:hover{
+  text-decoration: underline;
 }
 .app-card{
-  @apply rounded-md border text-dark shadow-lg border-purple-500 p-6;
+  @apply rounded-md border shadow-lg p-6;
+}
+
+.download-text{
+  @apply my-4;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.download-card{
+  height: 250px;
+  @apply app-card text-center flex flex-col justify-between;
+}
+.download-card:hover{
+  height: auto;
+}
+.download-card:hover .download-text{
+  display: block;
+  -webkit-line-clamp: none;
+  overflow: visible;;
+}
+
+.spaced-title{
+  @apply text-sm font-bold tracking-wider text-purple-500 mb-1;
 }
 .product-title{
   @apply text-5xl font-bold mb-10;
 }
-
 .product-subtitle{
   @apply text-2xl font-bold mb-4 mt-10;
 }
@@ -49,6 +89,7 @@
 .page-banner-title{
   @apply text-6xl;
 }
+
 .page-navigation .menu-item.active{
   @apply border-l-2 border-purple-500 bg-purple-200;
 }
@@ -56,11 +97,26 @@
   @apply bg-purple-200;
 }
 .product-paragraph{
-  @apply mb-4 text-dark
+  @apply mb-4;
 }
-.border-show table, .border-show tr, .border-show td, .border-show th{
+
+
+table.border-show, .border-show tr, .border-show td, .border-show th{
   @apply border border-gray-400;
 }
 tr, td, th{
   @apply p-3;
+}
+
+.app-input{
+  @apply border rounded-md p-3;
+  width: 100%;
+}
+.app-input-dark{
+  background: rgba(0, 0, 0, 0.2);
+  @apply rounded-md p-3;
+  width: 100%;
+}
+.app-input-dark::placeholder{
+  @apply text-gray-200;
 }
