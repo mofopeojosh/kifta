@@ -35,7 +35,6 @@
             </p>
             <div>37 Salisbury St</div>
             <div>Liverpool L3 8DR</div>
-            <div>+447562789175</div>
           </div>
 
           <div class="col-span-2 md:ml-5">
