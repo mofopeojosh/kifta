@@ -1,31 +1,60 @@
 <template>
-  <header class="flex items-center justify-between bg-dark p-6">
-    <div class="h-10">
-      <nuxt-link to="/">
-        <img src="/images/logo-white.png" class="h-10" alt="Logo">
-      </nuxt-link>
-    </div>
-    <ul class="flex text-white items-center">
-      <li v-for="(menu, key) in menuConfig" :key="key" class="menu-item">
-        <nuxt-link :to="menu.path">
-          {{ menu.name }}
+  <header class="bg-dark p-6">
+    <div class="flex items-center justify-between ">
+      <div class="h-10">
+        <nuxt-link to="/">
+          <img src="/images/logo-white.png" class="h-10" alt="Logo">
         </nuxt-link>
-        <div v-if="menu.children" class="menu-item-dropdown-wrapper">
-          <div class="menu-item-dropdown">
-            <nuxt-link
-              v-for="(menuChild, index) in menu.children"
-              :key="index"
-              :to="menuChild.path"
-              class="menu-dropdown-item"
-            >
+      </div>
+      <ul class="hidden md:flex text-white items-center">
+        <li v-for="(menu, key) in menuConfig" :key="key" class="menu-item">
+          <nuxt-link :to="menu.path">
+            {{ menu.name }}
+          </nuxt-link>
+          <div v-if="menu.children" class="menu-item-dropdown-wrapper">
+            <div class="menu-item-dropdown">
+              <nuxt-link
+                v-for="(menuChild, index) in menu.children"
+                :key="index"
+                :to="menuChild.path"
+                class="menu-dropdown-item"
+              >
+                {{ menuChild.name }}
+              </nuxt-link>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <nuxt-link to="/get-a-quote" class="app-btn app-btn-theme app-btn-md">
+            Get A Quote
+          </nuxt-link>
+        </li>
+      </ul>
+      <button class="md:hidden" @click="toggleMobileMenu">
+        <img src="/images/menu.svg">
+      </button>
+    </div>
+    <ul v-show="showMobileMenu" class="mt-5">
+      <li v-for="(menu, key) in menuConfig" :key="key">
+        <div class="flex justify-between py-4 border-b border-blue-800">
+          <nuxt-link :to="menu.path">
+            {{ menu.name }}
+          </nuxt-link>
+          <button v-if="menu.children" @click="showChildItem(key)">
+            +
+          </button>
+        </div>
+        <div v-if="menu.children && activeChildMenu === key" class="py-3 border-b border-blue-800">
+          <li v-for="(menuChild, index) in menu.children" :key="index" class="py-1">
+            <nuxt-link :to="menuChild.path">
               {{ menuChild.name }}
             </nuxt-link>
-          </div>
+          </li>
         </div>
       </li>
-      <li class="menu-item">
-        <nuxt-link to="/get-a-quote" class="app-btn-theme">
-          Get a Quote
+      <li class="pt-8 pb-4">
+        <nuxt-link to="/get-a-quote" class="app-btn app-btn-theme app-btn-md">
+          Get A Quote
         </nuxt-link>
       </li>
     </ul>
@@ -142,6 +171,10 @@ export default {
             {
               name: 'AUV',
               path: '/products/auv'
+            },
+            {
+              name: 'RUV',
+              path: '/products/ruv'
             }
           ]
         },
@@ -151,13 +184,27 @@ export default {
         },
         {
           name: 'News',
-          path: '#'
+          path: '/news'
         },
         {
           name: 'Contact',
           path: '/contact'
         }
-      ]
+      ],
+      showMobileMenu: false,
+      activeChildMenu: null
+    }
+  },
+  methods: {
+    toggleMobileMenu () {
+      this.showMobileMenu = !this.showMobileMenu
+    },
+    showChildItem (index) {
+      const prevActiveChildMenu = this.activeChildMenu
+      this.activeChildMenu = index
+      if (prevActiveChildMenu === index) {
+        this.activeChildMenu = null
+      }
     }
   }
 }
@@ -168,11 +215,12 @@ export default {
     @apply mx-3;
   }
 
-  .menu-item-dropdown-wrapper{
+  .menu-item-dropdown-wrapper {
     @apply relative;
     margin: -10px;
     padding: 10px;
   }
+
   .menu-item-dropdown {
     background-color: #001c40;
     min-width: 150px;

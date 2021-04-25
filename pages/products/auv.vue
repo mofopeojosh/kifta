@@ -6,6 +6,7 @@
     <h3 class="product-subtitle">
       Autonomous Underwater Vehicle
     </h3>
+    <img src="/images/AUV.jpeg" style="height: 300px;" alt="AUV">
     <h4 class="product-subtitle-sm">
       Medium Duty AUV
     </h4>

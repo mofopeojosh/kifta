@@ -1,7 +1,7 @@
 {
   "name": "Kifta",
   "version": "1.0.0",
-  "description": "Kifta application",
+  "description": "Kifta Technologies",
   "author": "Mofope Ojosh",
   "private": true,
   "scripts": {
@@ -21,9 +21,9 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

@@ -8,10 +8,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '4rem'
+      padding: {
+        default: '1.5rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem'
+      }
     }
   },
-  variants: {},
+  variants: {
+    tableLayout: ['responsive']
+  },
   plugins: [],
   purge: false
 }

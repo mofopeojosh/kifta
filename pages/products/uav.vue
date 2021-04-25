@@ -21,7 +21,6 @@
       <li>Ground Control Station</li>
       <li>Launch and Recovery Equipment</li>
     </ul>
-    <img src="/images/kifta-T-Laser.jpg" style="height: 300px;" alt="T Laser">
     <h3 class="product-subtitle">
       Parts of the UAV
     </h3>

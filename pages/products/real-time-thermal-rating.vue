@@ -50,82 +50,84 @@
           </TabMenuItem>
         </template>
         <template v-slot:specifications>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <td rowspan="4">
-                  <strong>Alarm Indicators</strong>
-                </td>
-                <td colspan="2">
-                  <strong>Fault Monitoring</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  Maximum Temperature Conductor Surface (MaxTCS)<br>
-                  Peak Temperature Conductor Surface (Peak TCS)
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <strong>Load Monitoring</strong>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  Circuit Load (Amps from current sensor or SCAD feed)<br>
-                  Temperature of cable conductor (TCC)
-                </td>
-              </tr>
-              <tr>
-                <td rowspan="2">
-                  <strong>Emergency Load</strong>
-                </td>
-                <td colspan="2">
-                  Short Term Permissable Load (STPL – Amps)<br>
-                  Short Term Permissable Duration (STPD)<br>
-                  30 min, 1 hr, 2hr, 4hr, 8hr
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  Medium Term Permissible Duration<br>
-                  8hr – 48hr
-                </td>
-              </tr>
-              <tr>
-                <td rowspan="2">
-                  <strong>Software Input paremeters</strong>
-                </td>
-                <td><strong>Cable</strong></td>
-                <td><strong>Environment</strong></td>
-              </tr>
-              <tr>
-                <td>
-                  Cable dimensions<br>
-                  Dielectric loss<br>
-                  Sheath Loss<br>
-                  Nominal rating
-                </td>
-                <td>
-                  Tunnel/room – convection characteristics<br>
-                  Buried – Soil thermal resistance &amp; capacity<br>
-                  Buried – multilayer option<br>
-                  IEC – T4option<br>
-                  Self adpation option
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Sensor Input Parameters</strong></td>
-                <td colspan="2">
-                  Temperature – Distributed Temperature Sensor (Kiftaor 3rd party)<br>
-                  Current sensor (Kifta supplied or 3rd party)<br>
-                  Security &amp; Environemnts sensors (Gas, CCTV, PSTN)<br>
-                  Vibration &amp; Acoustic (Distributed Acoustic Sensors)
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <td rowspan="4">
+                    <strong>Alarm Indicators</strong>
+                  </td>
+                  <td colspan="2">
+                    <strong>Fault Monitoring</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Maximum Temperature Conductor Surface (MaxTCS)<br>
+                    Peak Temperature Conductor Surface (Peak TCS)
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <strong>Load Monitoring</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Circuit Load (Amps from current sensor or SCAD feed)<br>
+                    Temperature of cable conductor (TCC)
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">
+                    <strong>Emergency Load</strong>
+                  </td>
+                  <td colspan="2">
+                    Short Term Permissable Load (STPL – Amps)<br>
+                    Short Term Permissable Duration (STPD)<br>
+                    30 min, 1 hr, 2hr, 4hr, 8hr
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Medium Term Permissible Duration<br>
+                    8hr – 48hr
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">
+                    <strong>Software Input paremeters</strong>
+                  </td>
+                  <td><strong>Cable</strong></td>
+                  <td><strong>Environment</strong></td>
+                </tr>
+                <tr>
+                  <td>
+                    Cable dimensions<br>
+                    Dielectric loss<br>
+                    Sheath Loss<br>
+                    Nominal rating
+                  </td>
+                  <td>
+                    Tunnel/room – convection characteristics<br>
+                    Buried – Soil thermal resistance &amp; capacity<br>
+                    Buried – multilayer option<br>
+                    IEC – T4option<br>
+                    Self adpation option
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Sensor Input Parameters</strong></td>
+                  <td colspan="2">
+                    Temperature – Distributed Temperature Sensor (Kiftaor 3rd party)<br>
+                    Current sensor (Kifta supplied or 3rd party)<br>
+                    Security &amp; Environemnts sensors (Gas, CCTV, PSTN)<br>
+                    Vibration &amp; Acoustic (Distributed Acoustic Sensors)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:approvals>

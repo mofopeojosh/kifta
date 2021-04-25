@@ -71,6 +71,10 @@ export default {
           {
             name: 'AUV',
             path: '/products/auv'
+          },
+          {
+            name: 'RUV',
+            path: '/products/ruv'
           }
         ],
         technology: [
@@ -119,6 +123,15 @@ export default {
           {
             name: 'Defense',
             path: '/sectors/defense'
+          }
+        ],
+        news: [
+          {
+            name: 'Follow us on medium',
+            path: 'https://medium.com/@mofopeojosh'
+          },
+          {
+            name: ''
           }
         ]
       }

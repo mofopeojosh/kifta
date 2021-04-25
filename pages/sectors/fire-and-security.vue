@@ -86,44 +86,46 @@
           <h5 class="product-subtitle-sm">
             Features and Benefits
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <th>Feature</th>
-                <th>Benefits</th>
-              </tr>
-              <tr>
-                <td>
-                  DAS monitoring for third party intervention (TPI) detection before the event occurs, whether it is
-                  malicious (terrorist, product theft) or accidental (3rd party digging)
-                </td>
-                <td>Prevention of theft, improved safety, lower maintenance and repair costs</td>
-              </tr>
-              <tr>
-                <td>Precise, real-time and actionable information at all points on your asset</td>
-                <td>
-                  Rapid and focused decision making with improved custodianship over assets thus reducing risk to
-                  reputation damage
-                </td>
-              </tr>
-              <tr>
-                <td>Smart configurable alarms - early rate of rise detection</td>
-                <td>Early detection of fire - prevention of damage to assets, protection of personnel</td>
-              </tr>
-              <tr>
-                <td>Passive optical components, no electronics or moving parts</td>
-                <td>Low maintenance and low cost of ownership. Suitable for use in Atex areas</td>
-              </tr>
-              <tr>
-                <td>Temperature monitoring information - dual use for ventilation control</td>
-                <td>Low cost of investment for additional assets</td>
-              </tr>
-              <tr>
-                <td>Utilize existing telecoms infrastructure working closely with telecoms/SCADA installer</td>
-                <td>Ease of installation, lowering overall cost of ownership</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <th>Feature</th>
+                  <th>Benefits</th>
+                </tr>
+                <tr>
+                  <td>
+                    DAS monitoring for third party intervention (TPI) detection before the event occurs, whether it is
+                    malicious (terrorist, product theft) or accidental (3rd party digging)
+                  </td>
+                  <td>Prevention of theft, improved safety, lower maintenance and repair costs</td>
+                </tr>
+                <tr>
+                  <td>Precise, real-time and actionable information at all points on your asset</td>
+                  <td>
+                    Rapid and focused decision making with improved custodianship over assets thus reducing risk to
+                    reputation damage
+                  </td>
+                </tr>
+                <tr>
+                  <td>Smart configurable alarms - early rate of rise detection</td>
+                  <td>Early detection of fire - prevention of damage to assets, protection of personnel</td>
+                </tr>
+                <tr>
+                  <td>Passive optical components, no electronics or moving parts</td>
+                  <td>Low maintenance and low cost of ownership. Suitable for use in Atex areas</td>
+                </tr>
+                <tr>
+                  <td>Temperature monitoring information - dual use for ventilation control</td>
+                  <td>Low cost of investment for additional assets</td>
+                </tr>
+                <tr>
+                  <td>Utilize existing telecoms infrastructure working closely with telecoms/SCADA installer</td>
+                  <td>Ease of installation, lowering overall cost of ownership</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:references>
