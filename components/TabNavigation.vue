@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="flex">
+    <ul>
       <slot :tab="tabConfig" name="nav" />
     </ul>
     <div class="mt-10">

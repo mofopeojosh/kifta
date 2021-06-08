@@ -8,16 +8,23 @@
 .main{
   min-height: 50vh;
 }
+.text-theme{
+  /*color: #ddd5d0;*/
+  @apply text-blue-400;
+}
+.border-dark{
+  border-color: #001c40;
+}
 
 .bg-dark{
   background-color: #001c40;
   @apply text-gray-200;
 }
 .bg-light{
-  background-color: #f8f7fa;
+  @apply bg-gray-100;
 }
 .bg-theme{
-  background-color: rgb(138, 125, 234);
+  @apply bg-blue-500;
 }
 .text-dark{
   color: #151E29;
@@ -26,26 +33,40 @@
   color: #B1B0B8;
 }
 
+
 .app-btn{
   vertical-align: middle;
-  @apply bg-dark rounded-md px-5 pb-3 pt-2;
+  @apply bg-dark rounded-md font-semibold leading-relaxed;
 }
-.app-btn-theme{
-  background-color: rgb(138, 125, 234);
-  @apply rounded-md px-4 pt-2 pb-3;
-}
-.btn:hover{
-  @apply opacity-75;
+.app-btn:hover{
+  opacity: 0.85
 }
 .app-btn-sm{
-  @apply bg-dark rounded-md px-3 py-1;
+  @apply px-3 py-2;
 }
+.app-btn-md{
+  @apply px-4 py-3;
+}
+.app-btn-lg{
+  @apply px-6 py-4;
+}
+.app-btn-theme{
+  @apply bg-blue-600;
+}
+.app-btn-dark{
+  @apply bg-dark;
+}
+.app-btn-light{
+  @apply bg-white text-dark;
+}
+
 .app-link{
-  @apply text-purple-500;
+  color: #001c40;
 }
 .app-link:hover{
   text-decoration: underline;
 }
+
 .app-card{
   @apply rounded-md border shadow-lg p-6;
 }
@@ -68,39 +89,50 @@
 .download-card:hover .download-text{
   display: block;
   -webkit-line-clamp: none;
-  overflow: visible;;
+  overflow: visible;
 }
 
 .spaced-title{
-  @apply text-sm font-bold tracking-wider text-purple-500 mb-1;
+  @apply text-sm font-bold tracking-wider text-theme mb-1;
 }
 .product-title{
-  @apply text-5xl font-bold mb-10;
+  @apply text-3xl font-bold mb-8;
 }
 .product-subtitle{
-  @apply text-2xl font-bold mb-4 mt-10;
+  @apply text-lg font-semibold mb-2 mt-8;
 }
 .product-subtitle-sm{
-  @apply text-lg font-semibold mb-2 mt-6;
+  @apply font-semibold mb-2 mt-6;
 }
 .page-banner{
-  @apply py-16;
+  @apply py-10;
 }
 .page-banner-title{
-  @apply text-6xl;
+  @apply text-5xl leading-tight;
 }
 
 .page-navigation .menu-item.active{
-  @apply border-l-2 border-purple-500 bg-purple-200;
+  @apply border-l-2 border-blue-500 bg-indigo-200;
 }
 .page-navigation .menu-item:hover{
-  @apply bg-purple-200;
+  @apply bg-indigo-200;
 }
 .product-paragraph{
   @apply mb-4;
 }
 
+.sectors-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  @apply border-l border-blue-500 rounded-md p-3 flex items-center my-4;
+}
 
+.sectors-card:hover {
+  @apply border-0 bg-blue-500;
+}
+
+.table-wrapper{
+  overflow: scroll;
+}
 table.border-show, .border-show tr, .border-show td, .border-show th{
   @apply border border-gray-400;
 }

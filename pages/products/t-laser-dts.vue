@@ -52,173 +52,181 @@
           </TabMenuItem>
         </template>
         <template v-slot:specifications>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th>Model</th>
-                <th>Range</th>
-                <th>Temperature Resolution</th>
-                <th>Temperature Accuracy</th>
-                <th>Sampling Resolution</th>
-                <th>Meas. Time</th>
-                <th>No. of Channels</th>
-              </tr>
-              <tr>
-                <!-- first row -->
-                <td>TL-02-10-4CH</td>
-                <td>10km</td>
-                <td>0.5°C</td>
-                <td>≤±1°C</td>
-                <td>1m</td>
-                <td>&lt;15s</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>TL-02-10-8CH</td>
-                <td>8km</td>
-                <td>0.5°C</td>
-                <td>≤±1°C</td>
-                <td>1m</td>
-                <td>&lt;15s</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <!-- third row -->
-                <td>TL-02-20-4CH</td>
-                <td>20km</td>
-                <td>0.5°C</td>
-                <td>≤±1°C</td>
-                <td>1m</td>
-                <td>&lt;60s</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <!-- fourth row -->
-                <td>TL-02-20-8CH</td>
-                <td>20km</td>
-                <td>0.5°C</td>
-                <td>≤±1°C</td>
-                <td>1m</td>
-                <td>&lt;60s</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <!-- fifth row -->
-                <td>TL-02-30-4CH</td>
-                <td>30km</td>
-                <td>0.5°C</td>
-                <td>≤±2°C</td>
-                <td>2m</td>
-                <td>&lt;120s</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <!-- sixth row -->
-                <td>TL-02-30-8CH</td>
-                <td>30km</td>
-                <td>0.5°C</td>
-                <td>≤±2°C</td>
-                <td>2m</td>
-                <td>&lt;120s</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <!-- seventh row -->
-                <td>TL-02-40-4CH</td>
-                <td>40km</td>
-                <td>1.5°C</td>
-                <td>≤±2°C</td>
-                <td>2m</td>
-                <td>&lt;240s</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <!-- eighth row -->
-                <td>TL-02-40-8CH</td>
-                <td>40km</td>
-                <td>1.5°C</td>
-                <td>≤±2°C</td>
-                <td>2m</td>
-                <td>&lt;240s</td>
-                <td>8</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th>Model</th>
+                  <th>Range</th>
+                  <th>Temperature Resolution</th>
+                  <th>Temperature Accuracy</th>
+                  <th>Sampling Resolution</th>
+                  <th>Meas. Time</th>
+                  <th>No. of Channels</th>
+                </tr>
+                <tr>
+                  <!-- first row -->
+                  <td>TL-02-10-4CH</td>
+                  <td>10km</td>
+                  <td>0.5°C</td>
+                  <td>≤±1°C</td>
+                  <td>1m</td>
+                  <td>&lt;15s</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>TL-02-10-8CH</td>
+                  <td>8km</td>
+                  <td>0.5°C</td>
+                  <td>≤±1°C</td>
+                  <td>1m</td>
+                  <td>&lt;15s</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <!-- third row -->
+                  <td>TL-02-20-4CH</td>
+                  <td>20km</td>
+                  <td>0.5°C</td>
+                  <td>≤±1°C</td>
+                  <td>1m</td>
+                  <td>&lt;60s</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <!-- fourth row -->
+                  <td>TL-02-20-8CH</td>
+                  <td>20km</td>
+                  <td>0.5°C</td>
+                  <td>≤±1°C</td>
+                  <td>1m</td>
+                  <td>&lt;60s</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <!-- fifth row -->
+                  <td>TL-02-30-4CH</td>
+                  <td>30km</td>
+                  <td>0.5°C</td>
+                  <td>≤±2°C</td>
+                  <td>2m</td>
+                  <td>&lt;120s</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <!-- sixth row -->
+                  <td>TL-02-30-8CH</td>
+                  <td>30km</td>
+                  <td>0.5°C</td>
+                  <td>≤±2°C</td>
+                  <td>2m</td>
+                  <td>&lt;120s</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <!-- seventh row -->
+                  <td>TL-02-40-4CH</td>
+                  <td>40km</td>
+                  <td>1.5°C</td>
+                  <td>≤±2°C</td>
+                  <td>2m</td>
+                  <td>&lt;240s</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <!-- eighth row -->
+                  <td>TL-02-40-8CH</td>
+                  <td>40km</td>
+                  <td>1.5°C</td>
+                  <td>≤±2°C</td>
+                  <td>2m</td>
+                  <td>&lt;240s</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br>
           <!-- second table -->
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th>Fibre Type</th>
-                <th>Channels</th>
-                <th>Temperature Range</th>
-                <th>Max Zone</th>
-              </tr>
-              <tr>
-                <!-- fifth row -->
-                <td>Multi-mode 50/125 (OM2, G.651.1)</td>
-                <td>&lt;2.5 / 0.8 dB/km @ 850/1300nm</td>
-                <td>
-                  -60°C ~ 85°C (standard acrylate fiber)
-                  -60°C ~ 150°C (speciality fiber)
-                </td>
-                <td>500</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th>Fibre Type</th>
+                  <th>Channels</th>
+                  <th>Temperature Range</th>
+                  <th>Max Zone</th>
+                </tr>
+                <tr>
+                  <!-- fifth row -->
+                  <td>Multi-mode 50/125 (OM2, G.651.1)</td>
+                  <td>&lt;2.5 / 0.8 dB/km @ 850/1300nm</td>
+                  <td>
+                    -60°C ~ 85°C (standard acrylate fiber)
+                    -60°C ~ 150°C (speciality fiber)
+                  </td>
+                  <td>500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <!-- third table -->
           <h5 class="product-subtitle-sm">
             Operating Environment
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th>Operating Temperature</th>
-                <th>Storage Temperature</th>
-                <th>Humidity </th>
-                <th>Height</th>
-                <th>Width</th>
-                <th>Depth</th>
-                <th>Weight</th>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>-10°C ~ 50°C</td>
-                <td>-10°C ~ 85°C</td>
-                <td>0% ~ 95% RH NC</td>
-                <td>131mm</td>
-                <td>432mm</td>
-                <td>332mm</td>
-                <td>10kg</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th>Operating Temperature</th>
+                  <th>Storage Temperature</th>
+                  <th>Humidity </th>
+                  <th>Height</th>
+                  <th>Width</th>
+                  <th>Depth</th>
+                  <th>Weight</th>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>-10°C ~ 50°C</td>
+                  <td>-10°C ~ 85°C</td>
+                  <td>0% ~ 95% RH NC</td>
+                  <td>131mm</td>
+                  <td>432mm</td>
+                  <td>332mm</td>
+                  <td>10kg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <!-- fourth table -->
           <h5 class="product-subtitle-sm">
             System Interface
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th>Internet ports</th>
-                <th>Relay output</th>
-                <th>Other ports</th>
-                <th>Power Supply Requirements</th>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>RJ-45, Ethernet 100Mb/s</td>
-                <td>50 way</td>
-                <td>RS232/485, USB</td>
-                <td>15 to 40 W (25W typical), 24 VDC or AC (optional)</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th>Internet ports</th>
+                  <th>Relay output</th>
+                  <th>Other ports</th>
+                  <th>Power Supply Requirements</th>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>RJ-45, Ethernet 100Mb/s</td>
+                  <td>50 way</td>
+                  <td>RS232/485, USB</td>
+                  <td>15 to 40 W (25W typical), 24 VDC or AC (optional)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:approvals>

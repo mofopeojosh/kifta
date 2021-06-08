@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
   .tab-item {
-    @apply mr-5 text-xl font-bold;
+    @apply inline-block mr-5 text-xl font-semibold;
   }
 
   .tab-item-sm {
@@ -40,6 +40,6 @@ export default {
   }
 
   .tab-item.active {
-    @apply text-purple-500 border-b-2 border-purple-500;
+    @apply text-blue-500 border-b-2 border-blue-500;
   }
 </style>

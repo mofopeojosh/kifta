@@ -7,9 +7,11 @@
           Products
         </h1>
       </div>
-      <section class="container grid grid-cols-3 gap-6 pb-20">
-        <div class="w-64 bg-light">
-          <PageNavigation menu-group="products" />
+      <section class="container md:grid grid-cols-3 gap-6 pb-20">
+        <div class="w-64 hidden md:block">
+          <div class="inline-block bg-light w-64">
+            <PageNavigation menu-group="products" />
+          </div>
         </div>
         <div class="col-span-2">
           <nuxt-child />
@@ -26,6 +28,7 @@ import PageNavigation from '~/components/PageNavigation'
 import AppHeader from '~/components/AppHeader.vue'
 
 export default {
+  scrollToTop: true,
   components: {
     PageNavigation,
     AppFooter,

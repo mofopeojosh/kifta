@@ -74,48 +74,50 @@
           <h5 class="product-subtitle-sm">
             Features and Benefits
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <th>Feature</th>
-                <th>Benefits</th>
-              </tr>
-              <tr>
-                <td>Precise, real-time and actionable information at all points on the grid</td>
-                <td>Rapid and focused decision making which improves custodianship over grid assets</td>
-              </tr>
-              <tr>
-                <td>Integrated thermal modelling of cables to industry standards (GIGRE &amp; IEC)</td>
-                <td>
-                  Improved situational awareness, increased compliance, reduced risk of fines and lower insurance
-                  premiums
-                </td>
-              </tr>
-              <tr>
-                <td>Proactive, risk based maintenance using accurately measured real-time information</td>
-                <td>Optimisation of planned maintenance program and reduction in unscheduled downtime</td>
-              </tr>
-              <tr>
-                <td>
-                  Monitoring and alarms at all points on the grid, including associated perimeters, entry and access
-                  points
-                </td>
-                <td>Improved security, lower potential for malicious or accidental third party intrusion (TPI)</td>
-              </tr>
-              <tr>
-                <td>Smart condition monitoring leads to effective prediction and prevention of equipment failure</td>
-                <td>Reduced downtime leading to improved return on investment and delayed capital spending</td>
-              </tr>
-              <tr>
-                <td>Smart management of operations windows to predict and prevent operations in harsh environments</td>
-                <td>Maximization of component lifetime increasing return on investment and delayed capital spending</td>
-              </tr>
-              <tr>
-                <td>Utilize existing telecoms infrastructure for sensing elements</td>
-                <td>Ease of installation, lowering overall cost of ownership</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <th>Feature</th>
+                  <th>Benefits</th>
+                </tr>
+                <tr>
+                  <td>Precise, real-time and actionable information at all points on the grid</td>
+                  <td>Rapid and focused decision making which improves custodianship over grid assets</td>
+                </tr>
+                <tr>
+                  <td>Integrated thermal modelling of cables to industry standards (GIGRE &amp; IEC)</td>
+                  <td>
+                    Improved situational awareness, increased compliance, reduced risk of fines and lower insurance
+                    premiums
+                  </td>
+                </tr>
+                <tr>
+                  <td>Proactive, risk based maintenance using accurately measured real-time information</td>
+                  <td>Optimisation of planned maintenance program and reduction in unscheduled downtime</td>
+                </tr>
+                <tr>
+                  <td>
+                    Monitoring and alarms at all points on the grid, including associated perimeters, entry and access
+                    points
+                  </td>
+                  <td>Improved security, lower potential for malicious or accidental third party intrusion (TPI)</td>
+                </tr>
+                <tr>
+                  <td>Smart condition monitoring leads to effective prediction and prevention of equipment failure</td>
+                  <td>Reduced downtime leading to improved return on investment and delayed capital spending</td>
+                </tr>
+                <tr>
+                  <td>Smart management of operations windows to predict and prevent operations in harsh environments</td>
+                  <td>Maximization of component lifetime increasing return on investment and delayed capital spending</td>
+                </tr>
+                <tr>
+                  <td>Utilize existing telecoms infrastructure for sensing elements</td>
+                  <td>Ease of installation, lowering overall cost of ownership</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:system-overview>

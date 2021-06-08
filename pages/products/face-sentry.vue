@@ -51,111 +51,113 @@
           </TabMenuItem>
         </template>
         <template v-slot:specifications>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th />
-                <th>FenceSentry 5</th>
-                <th>FenceSentry 10</th>
-              </tr>
-              <tr>
-                <!-- first row -->
-                <td>Smart Zones</td>
-                <td colspan="2">
-                  1000+ zone, fully configurable, independent of each other
-                </td>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>Intelligent Classification Engines</td>
-                <td colspan="2">
-                  Fence related intrusion alerts. Environmental noise reduction
-                </td>
-              </tr>
-              <tr>
-                <!-- third row -->
-                <td>Range (per unit)</td>
-                <td>5km</td>
-                <td>10km</td>
-              </tr>
-              <tr>
-                <!-- fourth row -->
-                <td>Positional Accuracy</td>
-                <td colspan="2">
-                  ±5m
-                </td>
-              </tr>
-              <tr>
-                <!-- fifth row -->
-                <td>Number of channels</td>
-                <td>1</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <!-- sixth row -->
-                <td>Optical fiber type</td>
-                <td>G.652/ G.654 single mode optical fiber</td>
-                <td>FC/APC connector</td>
-              </tr>
-              <tr>
-                <!-- seventh row -->
-                <td>Frequency range</td>
-                <td colspan="2">
-                  1Hz~40Hz
-                </td>
-              </tr>
-              <tr>
-                <!-- eighth row -->
-                <td>Response Time</td>
-                <td colspan="2">
-                  3 to 10 seconds
-                </td>
-              </tr>
-              <tr>
-                <!-- ninth row -->
-                <td>Voltage</td>
-                <td colspan="2">
-                  110V~220V(AC)
-                </td>
-              </tr>
-              <tr>
-                <!-- tenth row -->
-                <td>Power Consumption</td>
-                <td colspan="2">
-                  20W average (40W Maximum)
-                </td>
-              </tr>
-              <tr>
-                <!-- eleventh row -->
-                <td>Data Export</td>
-                <td colspan="2">
-                  48 relays, TCP/IP , RS 485
-                </td>
-              </tr>
-              <tr>
-                <!-- twelfth row -->
-                <td>Operating Temperature</td>
-                <td colspan="2">
-                  0 – 40°C
-                </td>
-              </tr>
-              <tr>
-                <!-- thirteenth row -->
-                <td>Integration with security system</td>
-                <td colspan="2">
-                  Integration with cameras (Onviv) and DVR (via Maxview for Fence)
-                </td>
-              </tr>
-              <tr>
-                <!-- thirteenth row -->
-                <td>Dimensions</td>
-                <td colspan="2">
-                  431 x 132 x 384 mm (19” rack - 3U height)
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th />
+                  <th>FenceSentry 5</th>
+                  <th>FenceSentry 10</th>
+                </tr>
+                <tr>
+                  <!-- first row -->
+                  <td>Smart Zones</td>
+                  <td colspan="2">
+                    1000+ zone, fully configurable, independent of each other
+                  </td>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>Intelligent Classification Engines</td>
+                  <td colspan="2">
+                    Fence related intrusion alerts. Environmental noise reduction
+                  </td>
+                </tr>
+                <tr>
+                  <!-- third row -->
+                  <td>Range (per unit)</td>
+                  <td>5km</td>
+                  <td>10km</td>
+                </tr>
+                <tr>
+                  <!-- fourth row -->
+                  <td>Positional Accuracy</td>
+                  <td colspan="2">
+                    ±5m
+                  </td>
+                </tr>
+                <tr>
+                  <!-- fifth row -->
+                  <td>Number of channels</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <!-- sixth row -->
+                  <td>Optical fiber type</td>
+                  <td>G.652/ G.654 single mode optical fiber</td>
+                  <td>FC/APC connector</td>
+                </tr>
+                <tr>
+                  <!-- seventh row -->
+                  <td>Frequency range</td>
+                  <td colspan="2">
+                    1Hz~40Hz
+                  </td>
+                </tr>
+                <tr>
+                  <!-- eighth row -->
+                  <td>Response Time</td>
+                  <td colspan="2">
+                    3 to 10 seconds
+                  </td>
+                </tr>
+                <tr>
+                  <!-- ninth row -->
+                  <td>Voltage</td>
+                  <td colspan="2">
+                    110V~220V(AC)
+                  </td>
+                </tr>
+                <tr>
+                  <!-- tenth row -->
+                  <td>Power Consumption</td>
+                  <td colspan="2">
+                    20W average (40W Maximum)
+                  </td>
+                </tr>
+                <tr>
+                  <!-- eleventh row -->
+                  <td>Data Export</td>
+                  <td colspan="2">
+                    48 relays, TCP/IP , RS 485
+                  </td>
+                </tr>
+                <tr>
+                  <!-- twelfth row -->
+                  <td>Operating Temperature</td>
+                  <td colspan="2">
+                    0 – 40°C
+                  </td>
+                </tr>
+                <tr>
+                  <!-- thirteenth row -->
+                  <td>Integration with security system</td>
+                  <td colspan="2">
+                    Integration with cameras (Onviv) and DVR (via Maxview for Fence)
+                  </td>
+                </tr>
+                <tr>
+                  <!-- thirteenth row -->
+                  <td>Dimensions</td>
+                  <td colspan="2">
+                    431 x 132 x 384 mm (19” rack - 3U height)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:approvals>

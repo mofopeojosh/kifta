@@ -53,180 +53,182 @@
           </TabMenuItem>
         </template>
         <template v-slot:specifications>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <th style="text-align: center;" colspan="7">
-                  Specifications for Horizon Range of DAS
-                </th>
-              </tr>
-              <tr>
-                <td>Horizon Model</td>
-                <td style="text-align: center;">
-                  Das 5
-                </td>
-                <td style="text-align: center;">
-                  Das 10
-                </td>
-                <td style="text-align: center;">
-                  Das 20
-                </td>
-                <td style="text-align: center;">
-                  Das 40
-                </td>
-                <td style="text-align: center;">
-                  DAS 50
-                </td>
-                <td style="text-align: center;">
-                  DAS 100
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Smart<br>
-                  Zones
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  1000+ zone, fully configurable, independent of each other
-                </td>
-              </tr>
-              <tr>
-                <td>Event Classification</td>
-                <td style="text-align: center;" colspan="6">
-                  Personnel, Manual Digging, Vehicle, Mechanical Digging
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Range<br>
-                  (per unit)
-                </td>
-                <td style="text-align: center;">
-                  5km
-                </td>
-                <td style="text-align: center;">
-                  10km
-                </td>
-                <td style="text-align: center;">
-                  20km
-                </td>
-                <td style="text-align: center;">
-                  40km
-                </td>
-                <td style="text-align: center;">
-                  50km
-                </td>
-                <td style="text-align: center;">
-                  100km
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Positional<br>
-                  Accuracy
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  ±5m
-                </td>
-              </tr>
-              <tr>
-                <td colspan="1">
-                  Number<br>
-                  of Channels
-                </td>
-                <td style="text-align: center;">
-                  1
-                </td>
-                <td style="text-align: center;">
-                  2
-                </td>
-                <td style="text-align: center;">
-                  1
-                </td>
-                <td style="text-align: center;">
-                  2
-                </td>
-                <td style="text-align: center;">
-                  1
-                </td>
-                <td style="text-align: center;">
-                  2
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Optical<br>
-                  Fiber
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  G.652/ G.654 single mode optical fiber
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Frequency<br>
-                  range
-                </td>
-                <td style="text-align: center;" colspan="2">
-                  1Hz~2.5kHz
-                </td>
-                <td style="text-align: center;" colspan="2">
-                  1Hz~1.6kHz
-                </td>
-                <td style="text-align: center;" colspan="2">
-                  1Hz~800Hz
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Response<br>
-                  time
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  2 to 10 seconds
-                </td>
-              </tr>
-              <tr>
-                <td>Voltage</td>
-                <td style="text-align: center;" colspan="6">
-                  100V~240V (AC)
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Power<br>
-                  Consumption
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  25W
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Data<br>
-                  Export
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  TCP/IP to IPC. Multiple interfaces via IPC/MaxView)
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Operating<br>
-                  Temperature
-                </td>
-                <td style="text-align: center;" colspan="6">
-                  -10 to 55°C
-                </td>
-              </tr>
-              <tr>
-                <td>Laser Safety Class</td>
-                <td style="text-align: center;" colspan="6">
-                  Class 1M (EN60825-1) 2000 / Output power &lt; 10mW
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <th style="text-align: center;" colspan="7">
+                    Specifications for Horizon Range of DAS
+                  </th>
+                </tr>
+                <tr>
+                  <td>Horizon Model</td>
+                  <td style="text-align: center;">
+                    Das 5
+                  </td>
+                  <td style="text-align: center;">
+                    Das 10
+                  </td>
+                  <td style="text-align: center;">
+                    Das 20
+                  </td>
+                  <td style="text-align: center;">
+                    Das 40
+                  </td>
+                  <td style="text-align: center;">
+                    DAS 50
+                  </td>
+                  <td style="text-align: center;">
+                    DAS 100
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Smart<br>
+                    Zones
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    1000+ zone, fully configurable, independent of each other
+                  </td>
+                </tr>
+                <tr>
+                  <td>Event Classification</td>
+                  <td style="text-align: center;" colspan="6">
+                    Personnel, Manual Digging, Vehicle, Mechanical Digging
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Range<br>
+                    (per unit)
+                  </td>
+                  <td style="text-align: center;">
+                    5km
+                  </td>
+                  <td style="text-align: center;">
+                    10km
+                  </td>
+                  <td style="text-align: center;">
+                    20km
+                  </td>
+                  <td style="text-align: center;">
+                    40km
+                  </td>
+                  <td style="text-align: center;">
+                    50km
+                  </td>
+                  <td style="text-align: center;">
+                    100km
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Positional<br>
+                    Accuracy
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    ±5m
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1">
+                    Number<br>
+                    of Channels
+                  </td>
+                  <td style="text-align: center;">
+                    1
+                  </td>
+                  <td style="text-align: center;">
+                    2
+                  </td>
+                  <td style="text-align: center;">
+                    1
+                  </td>
+                  <td style="text-align: center;">
+                    2
+                  </td>
+                  <td style="text-align: center;">
+                    1
+                  </td>
+                  <td style="text-align: center;">
+                    2
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Optical<br>
+                    Fiber
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    G.652/ G.654 single mode optical fiber
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Frequency<br>
+                    range
+                  </td>
+                  <td style="text-align: center;" colspan="2">
+                    1Hz~2.5kHz
+                  </td>
+                  <td style="text-align: center;" colspan="2">
+                    1Hz~1.6kHz
+                  </td>
+                  <td style="text-align: center;" colspan="2">
+                    1Hz~800Hz
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Response<br>
+                    time
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    2 to 10 seconds
+                  </td>
+                </tr>
+                <tr>
+                  <td>Voltage</td>
+                  <td style="text-align: center;" colspan="6">
+                    100V~240V (AC)
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Power<br>
+                    Consumption
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    25W
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Data<br>
+                    Export
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    TCP/IP to IPC. Multiple interfaces via IPC/MaxView)
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Operating<br>
+                    Temperature
+                  </td>
+                  <td style="text-align: center;" colspan="6">
+                    -10 to 55°C
+                  </td>
+                </tr>
+                <tr>
+                  <td>Laser Safety Class</td>
+                  <td style="text-align: center;" colspan="6">
+                    Class 1M (EN60825-1) 2000 / Output power &lt; 10mW
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:approvals>

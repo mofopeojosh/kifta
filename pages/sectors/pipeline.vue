@@ -55,47 +55,49 @@
           <h5 class="product-subtitle-sm">
             Features and Benefits
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <th>Feature</th>
-                <th>Benefits</th>
-              </tr>
-              <tr>
-                <td>
-                  DAS monitoring for third party intervention (TPI) detection before the vent occurs, whether it is
-                  malicious (terroist, product theft) or accidental (3rd party digging)
-                </td>
-                <td>Prevention of product theft, improved safety, lower maintenance and repair costs</td>
-              </tr>
-              <tr>
-                <td>Precise, real-time and actionable information at all points on the pipeline</td>
-                <td>
-                  Rapid and focused decision making which improves custodianship over pipeline thus reducing risk to
-                  reputational damage
-                </td>
-              </tr>
-              <tr>
-                <td>Proactive, risk based maintenance based on accurate measure real-time information</td>
-                <td>Optimization of planned maintenance program and reduction in unscheduled downtime</td>
-              </tr>
-              <tr>
-                <td>Smart condition monitoring leads to effective prediction and prevention of equipment failure</td>
-                <td>Reduced downtime leading to improved return on investment and delayed capital spending</td>
-              </tr>
-              <tr>
-                <td>Lead detection using both distributed acoustic (DAS) and distributed temperature sensors(DTS)</td>
-                <td>Early detection of leaks can prevent environmental damage, avoid fines and risk to reputation</td>
-              </tr>
-              <tr>
-                <td>
-                  Utilize existing telecoms infrastructure along pipelines – working closely with telecoms/SCADA
-                  installer
-                </td>
-                <td>Ease of installation, lowering overall cost of ownership</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <th>Feature</th>
+                  <th>Benefits</th>
+                </tr>
+                <tr>
+                  <td>
+                    DAS monitoring for third party intervention (TPI) detection before the vent occurs, whether it is
+                    malicious (terroist, product theft) or accidental (3rd party digging)
+                  </td>
+                  <td>Prevention of product theft, improved safety, lower maintenance and repair costs</td>
+                </tr>
+                <tr>
+                  <td>Precise, real-time and actionable information at all points on the pipeline</td>
+                  <td>
+                    Rapid and focused decision making which improves custodianship over pipeline thus reducing risk to
+                    reputational damage
+                  </td>
+                </tr>
+                <tr>
+                  <td>Proactive, risk based maintenance based on accurate measure real-time information</td>
+                  <td>Optimization of planned maintenance program and reduction in unscheduled downtime</td>
+                </tr>
+                <tr>
+                  <td>Smart condition monitoring leads to effective prediction and prevention of equipment failure</td>
+                  <td>Reduced downtime leading to improved return on investment and delayed capital spending</td>
+                </tr>
+                <tr>
+                  <td>Lead detection using both distributed acoustic (DAS) and distributed temperature sensors(DTS)</td>
+                  <td>Early detection of leaks can prevent environmental damage, avoid fines and risk to reputation</td>
+                </tr>
+                <tr>
+                  <td>
+                    Utilize existing telecoms infrastructure along pipelines – working closely with telecoms/SCADA
+                    installer
+                  </td>
+                  <td>Ease of installation, lowering overall cost of ownership</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <h5 class="product-subtitle-sm">
             Kifta Services
           </h5>

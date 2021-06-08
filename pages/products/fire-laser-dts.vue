@@ -66,197 +66,207 @@
           <h5 class="product-subtitle-sm">
             Summary of sensing capabilities
           </h5>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first table.  table headers-->
-                <th>FireLaser DTS Model</th>
-                <th>Range</th>
-                <th>Number of Channels</th>
-                <th>Number of Zones</th>
-                <th>Measurement Time (per circuit)</th>
-                <th>Temperature Resolution</th>
-                <th>Sample Resolution</th>
-              </tr>
-              <tr>
-                <!-- first row -->
-                <td>FL-03-02-1CH</td>
-                <td>2km</td>
-                <td>1</td>
-                <td>250</td>
-                <td>4 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>FL-03-02-2CH</td>
-                <td>2km</td>
-                <td>2</td>
-                <td>250</td>
-                <td>4 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- third row -->
-                <td>FL-03-02-4CH</td>
-                <td>2km</td>
-                <td>4</td>
-                <td>250</td>
-                <td>4 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- fourth row -->
-                <td>FL-03-05-1CH</td>
-                <td>5km</td>
-                <td>1</td>
-                <td>500</td>
-                <td>6 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- fifth row -->
-                <td>FL-03-05-2CH</td>
-                <td>5km</td>
-                <td>2</td>
-                <td>500</td>
-                <td>6 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- sixth row -->
-                <td>FL-03-05-4CH</td>
-                <td>5km</td>
-                <td>4</td>
-                <td>500</td>
-                <td>6 s</td>
-                <td>&lt;0.5</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- seventh row -->
-                <td>FL-03-10-2CH*</td>
-                <td>10km</td>
-                <td>2</td>
-                <td>1000</td>
-                <td>10 s</td>
-                <td>&lt;1</td>
-                <td>1 m</td>
-              </tr>
-              <tr>
-                <!-- eighth row -->
-                <td>FL-03-10-4CH*</td>
-                <td>10km</td>
-                <td>4</td>
-                <td>1000</td>
-                <td>10 s</td>
-                <td>&lt;1</td>
-                <td>1 m</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first table.  table headers-->
+                  <th>FireLaser DTS Model</th>
+                  <th>Range</th>
+                  <th>Number of Channels</th>
+                  <th>Number of Zones</th>
+                  <th>Measurement Time (per circuit)</th>
+                  <th>Temperature Resolution</th>
+                  <th>Sample Resolution</th>
+                </tr>
+                <tr>
+                  <!-- first row -->
+                  <td>FL-03-02-1CH</td>
+                  <td>2km</td>
+                  <td>1</td>
+                  <td>250</td>
+                  <td>4 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>FL-03-02-2CH</td>
+                  <td>2km</td>
+                  <td>2</td>
+                  <td>250</td>
+                  <td>4 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- third row -->
+                  <td>FL-03-02-4CH</td>
+                  <td>2km</td>
+                  <td>4</td>
+                  <td>250</td>
+                  <td>4 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- fourth row -->
+                  <td>FL-03-05-1CH</td>
+                  <td>5km</td>
+                  <td>1</td>
+                  <td>500</td>
+                  <td>6 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- fifth row -->
+                  <td>FL-03-05-2CH</td>
+                  <td>5km</td>
+                  <td>2</td>
+                  <td>500</td>
+                  <td>6 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- sixth row -->
+                  <td>FL-03-05-4CH</td>
+                  <td>5km</td>
+                  <td>4</td>
+                  <td>500</td>
+                  <td>6 s</td>
+                  <td>&lt;0.5</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- seventh row -->
+                  <td>FL-03-10-2CH*</td>
+                  <td>10km</td>
+                  <td>2</td>
+                  <td>1000</td>
+                  <td>10 s</td>
+                  <td>&lt;1</td>
+                  <td>1 m</td>
+                </tr>
+                <tr>
+                  <!-- eighth row -->
+                  <td>FL-03-10-4CH*</td>
+                  <td>10km</td>
+                  <td>4</td>
+                  <td>1000</td>
+                  <td>10 s</td>
+                  <td>&lt;1</td>
+                  <td>1 m</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first row -->
-                <th>Fiber Type</th>
-                <th>Temperature Range</th>
-                <th>Attenuation</th>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>Multi-mode 62.5/125 μm</td>
-                <td>
-                  -60°C ~ 85°C (long term **)
-                  -60°C ~ 150°C (short term **)
-                </td>
-                <td>&lt; 2.5 / 0.8 dB/km @ 850/1300nm</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first row -->
+                  <th>Fiber Type</th>
+                  <th>Temperature Range</th>
+                  <th>Attenuation</th>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>Multi-mode 62.5/125 μm</td>
+                  <td>
+                    -60°C ~ 85°C (long term **)
+                    -60°C ~ 150°C (short term **)
+                  </td>
+                  <td>&lt; 2.5 / 0.8 dB/km @ 850/1300nm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first row -->
-                <th colspan="7">
-                  FireLaser DTS Operating Environment
-                </th>
-              </tr>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first row -->
+                  <th colspan="7">
+                    FireLaser DTS Operating Environment
+                  </th>
+                </tr>
 
-              <tr>
-                <!-- first row -->
-                <td>Operating Temperature</td>
-                <td>Storage Temperature</td>
-                <td>Humidity</td>
-                <td>Height</td>
-                <td>Width</td>
-                <td>Depth</td>
-                <td>Weight</td>
-              </tr>
+                <tr>
+                  <!-- first row -->
+                  <td>Operating Temperature</td>
+                  <td>Storage Temperature</td>
+                  <td>Humidity</td>
+                  <td>Height</td>
+                  <td>Width</td>
+                  <td>Depth</td>
+                  <td>Weight</td>
+                </tr>
 
-              <tr>
-                <!-- second row -->
-                <td>-10℃ to 60℃</td>
-                <td>-20℃ to +85℃</td>
-                <td>0 to 95% RH NC</td>
-                <td>131 mm (3U)</td>
-                <td>432 mm</td>
-                <td>332 mm</td>
-                <td>10 kg</td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <!-- second row -->
+                  <td>-10℃ to 60℃</td>
+                  <td>-20℃ to +85℃</td>
+                  <td>0 to 95% RH NC</td>
+                  <td>131 mm (3U)</td>
+                  <td>432 mm</td>
+                  <td>332 mm</td>
+                  <td>10 kg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first row -->
-                <th>Compliance</th>
-                <th>Fire Approval</th>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>
-                  CE Marked, EN50081-1 (immunity), EN50082-1 (emissions) EN50130-4 (immunity), IEC 60185-1 :2001 Class
-                  1M laser
-                </td>
-                <td>VdS Approved to prEN54 part 22</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first row -->
+                  <th>Compliance</th>
+                  <th>Fire Approval</th>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>
+                    CE Marked, EN50081-1 (immunity), EN50082-1 (emissions) EN50130-4 (immunity), IEC 60185-1 :2001 Class
+                    1M laser
+                  </td>
+                  <td>VdS Approved to prEN54 part 22</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <br>
-          <table class="border-show w-full">
-            <tbody>
-              <tr>
-                <!-- first row -->
-                <th colspan="3">
-                  FireLaser DTS Communications Interface
-                </th>
-              </tr>
-              <tr>
-                <!-- second row -->
-                <td>Relay Ports</td>
-                <td>Serial</td>
-                <td>Ethernet</td>
-              </tr>
-              <tr>
-                <!-- third row -->
-                <td>50 way</td>
-                <td>
-                  RS 232/485
-                  USB
-                </td>
-                <td>RJ-45 100Mb/s</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="table-auto border-show w-full">
+              <tbody>
+                <tr>
+                  <!-- first row -->
+                  <th colspan="3">
+                    FireLaser DTS Communications Interface
+                  </th>
+                </tr>
+                <tr>
+                  <!-- second row -->
+                  <td>Relay Ports</td>
+                  <td>Serial</td>
+                  <td>Ethernet</td>
+                </tr>
+                <tr>
+                  <!-- third row -->
+                  <td>50 way</td>
+                  <td>
+                    RS 232/485
+                    USB
+                  </td>
+                  <td>RJ-45 100Mb/s</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </template>
 
         <template v-slot:approvals>

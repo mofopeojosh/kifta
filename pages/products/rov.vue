@@ -10,7 +10,8 @@
       ROVs are unoccupied, highly maneuverable underwater vehicles that can be used to explore ocean depths while the
       controller is located somewhere above the water.
     </p>
-    <img src="/images/kifta-T-Laser.jpg" style="height: 300px;" alt="T Laser">
+    <br>
+    <img src="/images/ROV.jpeg" style="height: 300px;" alt="T Laser">
     <h4 class="product-subtitle">
       Features and Benefits
     </h4>
