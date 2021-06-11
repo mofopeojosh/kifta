@@ -137,44 +137,60 @@ export default {
           path: '#',
           children: [
             {
-              name: 'Horizon - DAS',
-              path: '/products/horizon-das'
+              name: 'Hardwares',
+              path: '/products/hardwares',
+              children: [
+                {
+                  name: 'Horizon - DAS',
+                  path: '/products/horizon-das'
+                },
+                {
+                  name: 'Fire laser - DTS',
+                  path: '/products/fire-laser-dts'
+                },
+                {
+                  name: 'T-Laser - DTS',
+                  path: '/products/t-laser-dts'
+                },
+                {
+                  name: 'Real-time Thermal Rating',
+                  path: '/products/real-time-thermal-rating'
+                },
+                {
+                  name: 'Maxview - software',
+                  path: '/products/maxview-software'
+                },
+                {
+                  name: 'FenceSentry',
+                  path: '/products/face-sentry'
+                },
+                {
+                  name: 'ROV',
+                  path: '/products/rov'
+                },
+                {
+                  name: 'UAV',
+                  path: '/products/uav'
+                },
+                {
+                  name: 'AUV',
+                  path: '/products/auv'
+                },
+                {
+                  name: 'RUV',
+                  path: '/products/ruv'
+                }
+              ]
             },
             {
-              name: 'Fire laser - DTS',
-              path: '/products/fire-laser-dts'
-            },
-            {
-              name: 'T-Laser - DTS',
-              path: '/products/t-laser-dts'
-            },
-            {
-              name: 'Real-time Thermal Rating',
-              path: '/products/real-time-thermal-rating'
-            },
-            {
-              name: 'Maxview - software',
-              path: '/products/maxview-software'
-            },
-            {
-              name: 'FenceSentry',
-              path: '/products/face-sentry'
-            },
-            {
-              name: 'ROV',
-              path: '/products/rov'
-            },
-            {
-              name: 'UAV',
-              path: '/products/uav'
-            },
-            {
-              name: 'AUV',
-              path: '/products/auv'
-            },
-            {
-              name: 'RUV',
-              path: '/products/ruv'
+              name: 'Softwares',
+              path: '/products/softwares',
+              children: [
+                {
+                  name: 'Linear Heat Detection',
+                  path: '/sectors/linear-heat-detection'
+                }
+              ]
             }
           ]
         },
