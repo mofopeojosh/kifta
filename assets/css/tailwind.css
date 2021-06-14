@@ -92,6 +92,9 @@
   overflow: visible;
 }
 
+.spaced-title-lg{
+  @apply text-4xl font-bold tracking-wider text-theme mb-1;
+}
 .spaced-title{
   @apply text-sm font-bold tracking-wider text-theme mb-1;
 }

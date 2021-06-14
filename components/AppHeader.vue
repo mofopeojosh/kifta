@@ -138,53 +138,53 @@ export default {
           children: [
             {
               name: 'Hardwares',
-              path: '/products/hardwares',
+              path: '/product/hardwares',
               children: [
                 {
                   name: 'Horizon - DAS',
-                  path: '/products/horizon-das'
+                  path: '/product/horizon-das'
                 },
                 {
                   name: 'Fire laser - DTS',
-                  path: '/products/fire-laser-dts'
+                  path: '/product/fire-laser-dts'
                 },
                 {
                   name: 'T-Laser - DTS',
-                  path: '/products/t-laser-dts'
+                  path: '/product/t-laser-dts'
                 },
                 {
                   name: 'Real-time Thermal Rating',
-                  path: '/products/real-time-thermal-rating'
+                  path: '/product/real-time-thermal-rating'
                 },
                 {
                   name: 'Maxview - software',
-                  path: '/products/maxview-software'
+                  path: '/product/maxview-software'
                 },
                 {
                   name: 'FenceSentry',
-                  path: '/products/face-sentry'
+                  path: '/product/face-sentry'
                 },
                 {
                   name: 'ROV',
-                  path: '/products/rov'
+                  path: '/product/rov'
                 },
                 {
                   name: 'UAV',
-                  path: '/products/uav'
+                  path: '/product/uav'
                 },
                 {
                   name: 'AUV',
-                  path: '/products/auv'
+                  path: '/product/auv'
                 },
                 {
                   name: 'RUV',
-                  path: '/products/ruv'
+                  path: '/product/ruv'
                 }
               ]
             },
             {
               name: 'Softwares',
-              path: '/products/softwares',
+              path: '/product/softwares',
               children: [
                 {
                   name: 'Linear Heat Detection',

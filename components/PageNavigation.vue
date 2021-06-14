@@ -1,6 +1,6 @@
 <template>
-  <ul class="text-dark page-navigation">
-    <li v-for="(menu , key) in menuItems" :key="key">
+  <ul class="text-dark page-navigation" key="page-nav-list">
+    <li v-for="(menu , key) in menuItems" :key="'page-nav-list-item-'+key">
       <nuxt-link
         :to="menu.path"
         class="p-4 menu-item block"
@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'PageNavigation',
   props: {
@@ -38,43 +39,43 @@ export default {
         products: [
           {
             name: 'Horizon - DAS',
-            path: '/products/horizon-das'
+            path: '/product/horizon-das'
           },
           {
             name: 'Fire laser - DTS',
-            path: '/products/fire-laser-dts'
+            path: '/product/fire-laser-dts'
           },
           {
             name: 'T-Laser - DTS',
-            path: '/products/t-laser-dts'
+            path: '/product/t-laser-dts'
           },
           {
             name: 'Real-time Thermal Rating',
-            path: '/products/real-time-thermal-rating'
+            path: '/product/real-time-thermal-rating'
           },
           {
             name: 'Maxview - software',
-            path: '/products/maxview-software'
+            path: '/product/maxview-software'
           },
           {
             name: 'FenceSentry',
-            path: '/products/face-sentry'
+            path: '/product/face-sentry'
           },
           {
             name: 'ROV',
-            path: '/products/rov'
+            path: '/product/rov'
           },
           {
             name: 'UAV',
-            path: '/products/uav'
+            path: '/product/uav'
           },
           {
             name: 'AUV',
-            path: '/products/auv'
+            path: '/product/auv'
           },
           {
             name: 'RUV',
-            path: '/products/ruv'
+            path: '/product/ruv'
           }
         ],
         technology: [
@@ -137,9 +138,27 @@ export default {
       }
     }
   },
+  beforeMount(){
+    this.loadProducts();
+    this.loadCareers();
+  },
+  methods:{
+  loadProducts(){
+     this.products ? this.menuConfig.products = this.products : '';
+   },
+   loadCareers(){
+     this.careers ? this.menuConfig.careers = this.careers : '';
+   }
+  },
   computed: {
     menuItems () {
       return this.menuConfig[this.menuGroup] || []
+    }, 
+    products() {
+      return this.$store.getters['products/all'];
+    }, 
+    careers() {
+      return this.$store.getters['careers/all'];
     }
   }
 }

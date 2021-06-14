@@ -52,4 +52,8 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+main > .main {
+  /* padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important; */
+}
 </style>

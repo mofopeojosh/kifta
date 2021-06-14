@@ -19,12 +19,12 @@
 
     <ul class="list-disc px-5">
       <li>
-        <nuxt-link class="app-link" to="/products/fire-laser-dts">
+        <nuxt-link class="app-link" to="/product/fire-laser-dts">
           FireLaser – DTS
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link class="app-link" to="/products/t-laser-dts">
+        <nuxt-link class="app-link" to="/product/t-laser-dts">
           T-Laser – DTS
         </nuxt-link>
       </li>

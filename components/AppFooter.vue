@@ -1,5 +1,5 @@
 <template>
-  <div class="app-footer pt-10 md:pt-20 block">
+  <div class="app-footer pt-10 md:pt-20 block pl-5 pr-5">
     <section class="container">
       <div class="text-center md:flex items-center md:justify-between py-6 px-4 md:p-16 bg-theme rounded-md mb-10">
         <div>
@@ -34,7 +34,7 @@
             </nuxt-link>
           </p>
           <p>
-            <nuxt-link to="/products/uav">
+            <nuxt-link to="/products">
               Products
             </nuxt-link>
           </p>
@@ -46,6 +46,11 @@
           <p>
             <nuxt-link to="/news">
               News
+            </nuxt-link>
+          </p>
+          <p>
+            <nuxt-link to="/careers">
+              Careers
             </nuxt-link>
           </p>
         </div>
