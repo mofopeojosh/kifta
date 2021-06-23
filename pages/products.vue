@@ -3,14 +3,14 @@
     <AppHeader />
     <div class="main">
       <div class="container page-banner">
-        <h1 class="page-banner-title text-4xl text-center mb-6">
+        <h1 class="page-banner-title text-4xl text-center">
           Product
         </h1>
       </div>
       <section class="container md:grid grid-cols-3 gap-6 pb-20">
         <div class="col-span-3">
           <div>
-            <div class="mt-10">
+            <div class="mt-6">
               <ProductsView :active-tab="activeTab" />
             </div>
           </div>

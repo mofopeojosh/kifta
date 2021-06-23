@@ -34,7 +34,7 @@
         </template>
       </div>
       <div v-if="moreBtn" class="mt-10 mb-3 view-more">
-        <nuxt-link to="/products" class="btn app-btn app-btn-dark app-btn-sm">
+        <nuxt-link to="/products" class="btn app-btn app-btn-dark app-btn-lg">
           View More Products
         </nuxt-link>
       </div>
@@ -66,7 +66,7 @@
         </template>
       </div>
       <div v-if="moreBtn" class="mt-10 mb-3 view-more">
-        <nuxt-link to="/products" class="btn app-btn app-btn-dark app-btn-sm">
+        <nuxt-link to="/products" class="btn app-btn app-btn-dark app-btn-lg">
           View More Products
         </nuxt-link>
       </div>

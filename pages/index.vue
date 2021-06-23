@@ -7,10 +7,10 @@
           <div class="container min-h-screen flex flex-col justify-center py-10 padded">
             <div class="md:w-1/2 leading-tight z-20">
               <div class="mb-10">
-                <h1 class="font-bold text-4xl md:text-6xl">
+                <h1 class="font-bold text-4xl md:text-6xl line">
                   Kifta Technologies
                 </h1>
-                <h2 class="text-xl md:text-5xl">
+                <h2 class="action_text md:text-5xl">
                   Africa's leading in Autonomous Unmanned Systems and Counter UAS Systems.
                 </h2>
               </div>
@@ -167,8 +167,16 @@ export default {
     position: absolute;
     height: 100%;
     width: 100%;
-    @apply bg-blue-600;
-    opacity: 0.75;
+    @apply bg-blue-500;
+    opacity: 0.7;
+  }
+
+  .action_text {
+    line-height: 1.2;
+    font-size: 3.3rem;
+  }
+  .line {
+    line-height: 1.2 !important;
   }
 
   .app-intro {
@@ -176,7 +184,7 @@ export default {
   }
 
   .app-about {
-    @apply py-20 items-center;
+    @apply pb-20 items-center;
   }
 
   .app-products {

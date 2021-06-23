@@ -24,7 +24,7 @@
   @apply bg-gray-100;
 }
 .bg-theme{
-  @apply bg-blue-500;
+  @apply bg-blue-400;
 }
 .text-dark{
   color: #151E29;
@@ -51,7 +51,7 @@
   @apply px-6 py-4;
 }
 .app-btn-theme{
-  @apply bg-blue-600;
+  @apply bg-blue-500;
 }
 .app-btn-dark{
   @apply bg-dark;
@@ -108,7 +108,7 @@
   @apply font-semibold mb-2 mt-6;
 }
 .page-banner{
-  @apply py-10;
+  @apply py-8;
 }
 .page-banner-title{
   @apply text-5xl leading-tight;
@@ -130,7 +130,7 @@
 }
 
 .sectors-card:hover {
-  @apply border-0 bg-blue-500;
+  @apply border-0 bg-blue-400;
 }
 
 .table-wrapper{
