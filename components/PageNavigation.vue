@@ -1,21 +1,12 @@
 <template>
   <ul class="text-dark page-navigation" key="page-nav-list">
     <li v-for="(menu , key) in menuItems" :key="'page-nav-list-item-'+key">
-      <nuxt-link
-        :to="menu.path"
-        class="p-4 menu-item block"
-        :class="{'active': $route.path === menu.path }"
-      >
+      <nuxt-link :to="menu.path" class="p-4 menu-item block" :class="{'active': $route.path === menu.path }">
         {{ menu.name }}
       </nuxt-link>
       <div v-if="menu.children">
-        <nuxt-link
-          v-for="(childMenu , index) in menu.children"
-          :key="index"
-          :to="childMenu.path"
-          class="pl-8 pr-4 py-2 menu-item block"
-          :class="{'active': $route.path === childMenu.path }"
-        >
+        <nuxt-link v-for="(childMenu , index) in menu.children" :key="index" :to="childMenu.path"
+          class="pl-8 pr-4 py-2 menu-item block" :class="{'active': $route.path === childMenu.path }">
           {{ childMenu.name }}
         </nuxt-link>
       </div>
