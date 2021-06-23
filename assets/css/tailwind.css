@@ -155,3 +155,7 @@ tr, td, th{
 .app-input-dark::placeholder{
   @apply text-gray-200;
 }
+
+.ml-33 {
+  margin-left: 8.3rem;
+}

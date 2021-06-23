@@ -61,18 +61,18 @@ export default {
             name: 'FenceSentry',
             path: '/product/face-sentry'
           },
-          {
-            name: 'ROV',
-            path: '/product/rov'
-          },
+          // {
+          //   name: 'ROV',
+          //   path: '/product/rov'
+          // },
           {
             name: 'UAV',
             path: '/product/uav'
           },
-          {
-            name: 'AUV',
-            path: '/product/auv'
-          },
+          // {
+          //   name: 'AUV',
+          //   path: '/product/auv'
+          // },
           {
             name: 'RUV',
             path: '/product/ruv'

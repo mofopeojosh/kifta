@@ -1,27 +1,27 @@
 <template>
   <main class="w-full">
-    <AppHeader />
+    <AppHeader></AppHeader>
     <div class="main">
       <div class="bg-dark">
-        <div class="bg-gray-900 app-banner" style="background-image: url('images/AI-Banner.webp');">
-          <div class="container min-h-screen flex flex-col justify-center py-10">
+        <div class="bg-gray-900 app-banner" style="background-image: url('images/kifta-banner-02.jpeg');">
+          <div class="container min-h-screen flex flex-col justify-center py-10 padded">
             <div class="md:w-1/2 leading-tight z-20">
               <div class="mb-10">
                 <h1 class="font-bold text-4xl md:text-6xl">
                   Kifta Technologies
                 </h1>
-                <h2 class="text-4xl md:text-6xl">
-                  World's leading Fibre Optic Technology
+                <h2 class="text-xl md:text-5xl">
+                  Africa's leading in Autonomous Unmanned Systems and Counter UAS Systems.
                 </h2>
               </div>
               <nuxt-link to="/get-a-quote" class="app-btn app-btn-dark font-bold app-btn-lg">
-                Get A Quote
+                Get A Quote 
               </nuxt-link>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-dark">
+      <div class="bg-dark padded">
         <section class="container app-intro grid grid-cols-1 md:grid-cols-2 gap-6">
           <article class="">
             <h6 class="text-xl">
@@ -71,10 +71,10 @@
           </div>
         </section>
       </div>
-      <div class="bg-dark">
+      <div class="bg-dark padded">
         <section class="container app-about md:grid grid-cols-2 gap-6 mb-4">
           <div class="">
-            <h6 class="spaced-title-lg">
+            <h6 class="spaced-title">
               About Us
             </h6>
             <h2 class="text-lg mb-4 mt-3 text-light">
@@ -83,47 +83,35 @@
               crucial efforts by African countries to indigenize their capacity
               to meet their defence needs as they tackle ongoing developmental
               and security imperatives in the 21st Century.
-              <br class="mb-4">
-              Our team members have over 40 years combined experience in the defence 
-              and security eco-system. All with multiple jurisdictions having worked 
-              with countries and  private firms in Africa, Asia and Europe.
-              <br class="mb-4">
-              KIFTA is a military and defence technology innovator, manufacturer and 
-              solutions provider. It has, however, through a rigorous product innovation 
-              process as well as sizeable research and development investments, developed 
-              a spectrum of tested and ready-to-market product prototypes, 
-              which cut across a wide range of military, civilian, 
-              public and private sector needs.
             </h2>
-            <div class="mt-5 mb-3">
-              <nuxt-link to="/about" class="btn app-btn app-btn-light app-btn-sm">
-                Find out more
-              </nuxt-link>
-            </div>
 
-            <h6 class="spaced-title-lg mt-10 text-4xl">
+            <h6 class="spaced-title mt-10">
               Our Vision
             </h6>
-            <p class="text-lg mb-4 mt-4 text-light">
+            <p class="text-lg mb-4 mt-3 text-light">
               Kifta’s Vision is to help every African country attain sustainability by
               providing access to necessary defense products and intelligence
               solutions in it's growth to industrialization.
             </p>
-          </div>
-          <div class="p-5 shadow-md bg-white my-10 md:mx-8">
-            <img class="h-100 object-contain " src="/images/situational-awareness.jpeg">
+            <div class="mt-10 mb-3">
+              <nuxt-link to="/about" class="btn app-btn app-btn-light app-btn-lg">
+                Find out more
+              </nuxt-link>
+            </div>
           </div>
         </section>
       </div>
-      <div class="bg-white bg-opacity-75 py-10">
-        <section class="app-products container">
-          <h2 class="text-4xl text-center mb-6">
+      <div class="bg-white bg-opacity-75 py-10 padded">
+        <section class="container">
+          <h2 class="text-4xl text-center mb-8">
             Our Products
           </h2>
-          <ProductsView :max-display="4" :more-btn="true" :featured-only="true" />
+          <client-only>
+            <ProductsView :max-display="4" :more-btn="false" :featured-only="true"></ProductsView>
+          </client-only>
         </section>
         <section class="container">
-          <h2 class="text-4xl mb-10 text-center">
+          <h2 class="text-4xl mt-10 mb-6 text-center">
             Our Clients
           </h2>
           <div class="app-clients mb-20">
@@ -146,7 +134,7 @@
         </section>
       </div>
     </div>
-    <AppFooter />
+    <AppFooter></AppFooter>
   </main>
 </template>
 
@@ -197,5 +185,9 @@ export default {
 
   .app-clients {
     @apply grid grid-cols-3 gap-4;
+  }
+  .padded {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 </style>

@@ -11,7 +11,7 @@
           </p>
         </div>
         <div class="mt-4">
-          <nuxt-link to="/get-a-quote" class="app-btn app-btn-light app-btn-sm md:app-btn-md">
+          <nuxt-link to="/get-a-quote" class="app-btn app-btn-light app-btn-lg md:app-btn-md">
             Get A Quote
           </nuxt-link>
         </div>
@@ -101,7 +101,7 @@
         </div>
       </footer>
       <div class="py-4">
-        <small class="text-light">&copy; 2020. Kifta Technologies is a subsidiary of
+        <small class="text-light">&copy; {{ new Date().getFullYear() }}. Kifta Technologies is a subsidiary of
           <a href="https://kiftaindustries.com" class="font-bold">
             Kifta Industries.
           </a>

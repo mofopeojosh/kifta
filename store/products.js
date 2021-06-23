@@ -1,6 +1,14 @@
 export const state = () => ({
   all: [
     {
+      name: 'UAV',
+      path: '/product/uav',
+      type: 'hardware',
+      description: "An Unmanned Aerial Vehicle (UAV) is an aircraft that carries no human pilot or passengers. UAVs can be fully or partially autonomous but are more often controlled remotely by a human pilot. ",
+      image: "/images/kifta-uav-parts-1.jpg",
+      featured: true
+    },
+    {
       name: 'Horizon - DAS',
       path: '/product/horizon-das',
       type: 'software',
@@ -45,33 +53,25 @@ export const state = () => ({
       path: '/product/face-sentry',
       type: 'hardware',
       description: "The FenceSentry series of Distributed Acoustic Sensors (DAS) are optimised for Perimeter Intrusion Detection (PIDS) and provides detection and locating of intrusion events with minimal nuisance events and false alarms. ",
-      image: "",
+      image: "/images/sentry-fencing.jpeg",
       featured: false
     },
-    {
-      name: 'ROV',
-      path: '/product/rov',
-      type: 'hardware',
-      description: "ROVs are unoccupied, highly maneuverable underwater vehicles that can be used to explore ocean depths while the controller is located somewhere above the water. ",
-      image: "/images/kifta-rov.jpg",
-      featured: true
-    },
-    {
-      name: 'UAV',
-      path: '/product/uav',
-      type: 'hardware',
-      description: "An Unmanned Aerial Vehicle (UAV) is an aircraft that carries no human pilot or passengers. UAVs can be fully or partially autonomous but are more often controlled remotely by a human pilot. ",
-      image: "/images/kifta-uav-parts-1.jpg",
-      featured: true
-    },
-    {
-      name: 'AUV',
-      path: '/product/auv',
-      type: 'hardware',
-      description: "The medium-sized AUV is mainly used for submarine search and pipeline inspection, its main task is to cruise along the submarine oil and gas pipeline and find the buried, suspended, leaking and other damages of the pipeline. In addition, it can also be used for general investigation and marine investigation tasks. ",
-      image: "/images/kifta-auv.png",
-      featured: false
-    },
+    // {
+    //   name: 'ROV',
+    //   path: '/product/rov',
+    //   type: 'hardware',
+    //   description: "ROVs are unoccupied, highly maneuverable underwater vehicles that can be used to explore ocean depths while the controller is located somewhere above the water. ",
+    //   image: "/images/kifta-rov.jpg",
+    //   featured: false
+    // },
+    // {
+    //   name: 'AUV',
+    //   path: '/product/auv',
+    //   type: 'hardware',
+    //   description: "The medium-sized AUV is mainly used for submarine search and pipeline inspection, its main task is to cruise along the submarine oil and gas pipeline and find the buried, suspended, leaking and other damages of the pipeline. In addition, it can also be used for general investigation and marine investigation tasks. ",
+    //   image: "/images/kifta-auv.png",
+    //   featured: false
+    // },
     {
       name: 'RUV',
       path: '/product/ruv',
@@ -98,15 +98,15 @@ export const state = () => ({
     },
     {
       name: 'Smart Helmet',
-      path: '/product/ruv',
+      path: '/product/smart-helmet',
       type: 'hardware',
       description: "It is developed for the military industry and applicable to such scenarios as individual soldier combat, equipment maintenance, military training and operation commanding, etc. ",
       image: "/images/kifta-smart-military-helmet-2.jpg",
-      featured: false
+      featured: true
     },
     {
-      name: 'Long range PTZ camera',
-      path: '/product/ruv',
+      name: 'Long Range PTZ Camera',
+      path: '/product/long-range-ptz-camera',
       type: 'hardware',
       description: "Military Grade Intelligent Pan Tilt Camera Ultra Long Range 20KM. Support multiple lens preset setting function, variable multiple adaptive, rotation speed can be adjusted automatically according to lens variable multiple and multiple;",
       image: "/images/kifta-long-range-camera.jpg",

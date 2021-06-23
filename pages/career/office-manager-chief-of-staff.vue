@@ -35,5 +35,9 @@
       <li>Health Care Plan (Medical, Dental & Vision)</li>
       <li>Stock Option Plan</li>
     </ul>
+    <h4 class="product-subtitle-sm">Interested?</h4>
+    <p class="product-paragraph">
+      Send an email to <strong>info@kiftatechnologies.com</strong> attaching your CV and Cover letter indicating why you are the right fit for the role.
+    </p>
   </div>
 </template>

@@ -58,5 +58,8 @@ export default {
 </script>
 
 <style scoped>
-
+.main {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
 </style>

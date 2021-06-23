@@ -3,8 +3,8 @@
     <AppHeader />
     <div class="main">
       <div class="container pt-20">
-        <div class="md:grid grid-cols-4 gap-6">
-          <div class="col-span-2 col-start-2 text-center">
+        <div class="md:grid grid-cols-8 gap-6">
+          <div class="col-span-6 col-start-2 text-center">
             <h1 class="page-banner-title mb-10">
               About Us
             </h1>
@@ -68,7 +68,12 @@
           </p>
           <div class="px-5 md:px-10 py-5 bg-gray-100 border-l border-blue-500">
             <p class="product-paragraph">
-              KIFTA Technologies is an integrated defence technology company, founded in 2018 , with a mission to be a critical lever in the crucial efforts by African countries to indigenize their capacity to meet their defence needs as they tackle ongoing developmental and security imperatives in the 21st Century.
+              Our team of diverse and qualified members and partners are specially
+              trained in different fields and jurisdictions and have so far worked in
+              five different continents. We work through a tight network of
+              multi-jurisdictional qualified engineers, researchers, software
+              engineers, data scientists, business intelligence analysts et al to
+              provide tailor - made solutions in achieving client’s goal.
             </p>
           </div>
         </div>
@@ -90,4 +95,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.main {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+</style>

@@ -43,12 +43,6 @@
       <li>Adaptive optical fog penetration function: with automatic,off, open optical fog setting options, fog level 1-9 adjustable,when the fog concentration reached a predetermined threshold, can automatically switch between digital and optical fog;</li>
       <li>Hidden monitoring: passive thermal imaging, no red storm laser night vision.</li>
     </ol>
-    
-    <div class="mt-10 mb-3 view-more">
-      <a href="#" @click.prevent="downloadItem()" class="btn app-btn app-btn-dark app-btn-sm">
-        Click to Download More Details
-      </a>
-    </div>
   </div>
 </template>
 
@@ -58,7 +52,7 @@ import Vue from 'vue';
 export default {
   methods: {
   downloadItem () {
-    Axios.get('/files/AI-aser-night-vision-camera.pdf', { responseType: 'blob' })
+    Axios.get('/resources/AI-Laser-Night-Vision-Camera.pdf', { responseType: 'blob' })
       .then(response => {
         const blob = new Blob([response.data], { type: 'application/pdf' })
         const link = document.createElement('a')

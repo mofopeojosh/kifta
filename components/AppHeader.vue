@@ -7,23 +7,9 @@
         </nuxt-link>
       </div>
       <ul class="hidden md:flex text-white items-center">
-        <li v-for="(menu, key) in menuConfig" :key="key" class="menu-item">
-          <nuxt-link :to="menu.path">
-            {{ menu.name }}
-          </nuxt-link>
-          <div v-if="menu.children" class="menu-item-dropdown-wrapper">
-            <div class="menu-item-dropdown">
-              <nuxt-link
-                v-for="(menuChild, index) in menu.children"
-                :key="index"
-                :to="menuChild.path"
-                class="menu-dropdown-item"
-              >
-                {{ menuChild.name }}
-              </nuxt-link>
-            </div>
-          </div>
-        </li>
+        <client-only>
+          <DesktopNavbar :list="menuConfig"></DesktopNavbar>
+        </client-only>
         <li class="menu-item">
           <nuxt-link to="/get-a-quote" class="app-btn app-btn-theme app-btn-md">
             Get A Quote
@@ -34,52 +20,64 @@
         <img src="/images/menu.svg">
       </button>
     </div>
-    <ul v-show="showMobileMenu" class="mt-5">
-      <li v-for="(menu, key) in menuConfig" :key="key">
-        <div class="flex justify-between py-4 border-b border-blue-800">
-          <nuxt-link :to="menu.path">
-            {{ menu.name }}
-          </nuxt-link>
-          <button v-if="menu.children" @click="showChildItem(key)">
-            +
-          </button>
-        </div>
-        <div v-if="menu.children && activeChildMenu === key" class="py-3 border-b border-blue-800">
-          <li v-for="(menuChild, index) in menu.children" :key="index" class="py-1">
-            <nuxt-link :to="menuChild.path">
-              {{ menuChild.name }}
+    <client-only>
+      <ul v-show="showMobileMenu" class="mt-5">
+        <li v-for="(menu, key) in menuConfig" :key="key">
+          <template v-if="menu.path === '#'">
+            <div class="flex justify-between py-4 border-b border-blue-800" @click="showChildItem(key)">
+              <a href="#">
+                {{ menu.name }}
+              </a>
+              <button v-if="menu.children" @click="showChildItem(key)">
+                +
+              </button>
+            </div>
+          </template>
+          <div v-else class="flex justify-between py-4 border-b border-blue-800">
+            <nuxt-link :to="menu.path">
+              {{ menu.name }}
             </nuxt-link>
-          </li>
-        </div>
-      </li>
-      <li class="pt-8 pb-4">
-        <nuxt-link to="/get-a-quote" class="app-btn app-btn-theme app-btn-md">
-          Get A Quote
-        </nuxt-link>
-      </li>
-    </ul>
+          </div>
+          <div v-if="menu.children && activeChildMenu === key" class="py-3 border-b border-blue-800">
+            <li v-for="(menuChild, index) in menu.children" :key="index" class="py-1">
+              <nuxt-link :to="menuChild.path">
+                {{ menuChild.name }}
+              </nuxt-link>
+            </li>
+          </div>
+        </li>
+        <li class="pt-8 pb-4">
+          <nuxt-link to="/get-a-quote" class="app-btn app-btn-theme app-btn-md">
+            Get A Quote
+          </nuxt-link>
+        </li>
+      </ul>
+    </client-only>
   </header>
 </template>
 
 <script>
-
+import DesktopNavbar from '~/components/AppNavbar.vue';
 export default {
   name: 'AppHeader',
+  components: {
+    DesktopNavbar
+  },
   data () {
     return {
-      menuConfig: [
-        {
-          name: 'Home',
-          path: '/'
-        },
-        {
-          name: 'About',
-          path: '/about'
-        },
-        {
-          name: 'Sectors',
-          path: '#',
-          children: [
+      menuConfig: [],
+      showMobileMenu: false,
+      activeChildMenu: null
+    }
+  },
+  beforeMount(){
+    this.loadMenu();
+  },
+  methods: {
+    loadMenu() {
+      this.menuConfig[0] = { name: 'Home', path: '/' },
+      this.menuConfig[1] = { name: 'About', path: '/about' },
+      this.menuConfig[2] = { name: 'Sectors', path: '#', children: [
             {
               name: 'Power',
               path: '/sectors/power',
@@ -114,7 +112,7 @@ export default {
             }
           ]
         },
-        {
+      this.menuConfig[3] = {
           name: 'Technology',
           path: '#',
           children: [
@@ -131,87 +129,34 @@ export default {
               path: '/technology/real-time-thermal-rating'
             }
           ]
-        },
-        {
+        }
+      this.menuConfig[4] = this.loadProducts();
+      this.menuConfig[5] = { name: 'Resources', path: '/resources' }
+      this.menuConfig[6] = { name: 'News', path: '/news' }
+      this.menuConfig[7] = { name: 'Contact', path: '/contact' }
+      this.menuConfig[8] = { name: 'Careers', path: '/careers' }
+    },
+    loadProducts(){
+      if(this.softwares && this.hardwares) {
+        let p = {
           name: 'Products',
           path: '#',
           children: [
             {
-              name: 'Hardwares',
+              name: 'Hardware',
               path: '/product/hardwares',
-              children: [
-                {
-                  name: 'Horizon - DAS',
-                  path: '/product/horizon-das'
-                },
-                {
-                  name: 'Fire laser - DTS',
-                  path: '/product/fire-laser-dts'
-                },
-                {
-                  name: 'T-Laser - DTS',
-                  path: '/product/t-laser-dts'
-                },
-                {
-                  name: 'Real-time Thermal Rating',
-                  path: '/product/real-time-thermal-rating'
-                },
-                {
-                  name: 'Maxview - software',
-                  path: '/product/maxview-software'
-                },
-                {
-                  name: 'FenceSentry',
-                  path: '/product/face-sentry'
-                },
-                {
-                  name: 'ROV',
-                  path: '/product/rov'
-                },
-                {
-                  name: 'UAV',
-                  path: '/product/uav'
-                },
-                {
-                  name: 'AUV',
-                  path: '/product/auv'
-                },
-                {
-                  name: 'RUV',
-                  path: '/product/ruv'
-                }
-              ]
+              children: this.hardwares
             },
             {
-              name: 'Softwares',
+              name: 'Software',
               path: '/product/softwares',
-              children: [
-                {
-                  name: 'Linear Heat Detection',
-                  path: '/sectors/linear-heat-detection'
-                }
-              ]
+              children: this.softwares
             }
           ]
-        },
-        {
-          name: 'Resources',
-          path: '/resources'
-        },
-        {
-          name: 'News',
-          path: '/news'
-        },
-        {
-          name: 'Contact',
-          path: '/contact'
         }
-      ],
-      showMobileMenu: false,
-      activeChildMenu: null
-    }
-  },
-  methods: {
+        return p;
+      }
+    },
     toggleMobileMenu () {
       this.showMobileMenu = !this.showMobileMenu
     },
@@ -221,6 +166,17 @@ export default {
       if (prevActiveChildMenu === index) {
         this.activeChildMenu = null
       }
+    }
+  },
+  computed: {
+    products() {
+      return this.$store.getters['products/all'];
+    }, 
+    softwares() {
+      return this.$store.getters['products/softwares'];
+    }, 
+    hardwares() {
+      return this.$store.getters['products/hardwares'];
     }
   }
 }
@@ -235,6 +191,11 @@ export default {
     @apply relative;
     margin: -10px;
     padding: 10px;
+  }
+  .menu-item-grandchild-dropdown-wrapper {
+    @apply relative;
+    padding: 10px;
+    margin-left: 180px;
   }
 
   .menu-item-dropdown {
@@ -262,5 +223,19 @@ export default {
   .menu-item-dropdown-wrapper:focus .menu-item-dropdown {
     @apply block;
   }
+  
+  .menu-dropdown-item:hover > .menu-item-grandchild-dropdown-wrapper,
+  .menu-dropdown-item:focus > .menu-item-grandchild-dropdown-wrapper {
+    @apply block;
+  }
 
+  .menu-item-grandchild-dropdown-wrapper .menu-item-grandchild-dropdown {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+
+  .menu-item-grandchild-dropdown-wrapper .menu-item-dropdown {
+    padding-top: 0px;
+  }
 </style>

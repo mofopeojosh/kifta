@@ -4,7 +4,7 @@
     <div class="main">
       <div class="container page-banner">
         <h1 class="page-banner-title text-4xl text-center mb-6">
-          Careers
+          Career
         </h1>
         <h2 class="product-title text-center">
           Current Openings
@@ -60,3 +60,9 @@ export default {
     })
 }
 </script>
+<style scoped>
+.main {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+</style>
