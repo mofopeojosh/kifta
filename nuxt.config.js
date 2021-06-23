@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue2-filters'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -65,7 +66,8 @@ export default {
   },
   generate: {
     routes: [
-      '/products'
+      '/product',
+      '/career'
     ]
   }
 }

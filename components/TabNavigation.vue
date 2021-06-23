@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul>
+    <ul :class="centerMenu ? 'text-center' : ''">
       <slot :tab="tabConfig" name="nav" />
     </ul>
     <div class="mt-10">
@@ -16,6 +16,11 @@ export default {
     defaultTab: {
       type: String,
       required: true
+    },
+    centerMenu: {
+      type: Boolean,
+      default: false,
+      required: false
     }
   },
   data () {
