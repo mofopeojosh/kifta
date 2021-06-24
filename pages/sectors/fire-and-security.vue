@@ -39,14 +39,14 @@
           <ul class="list-disc px-5">
             <li>
               Airport –
-              <nuxt-link class="app-link" to="/secotrs/fire-and-security/linear-heat-detection">
+              <nuxt-link class="app-link" to="/sectors/linear-heat-detection">
                 linear heat detection
               </nuxt-link>
               and perimeter security (PIDS)
             </li>
             <li>
               Tunnels –
-              <nuxt-link class="app-link" to="/secotrs/fire-and-security/linear-heat-detection">
+              <nuxt-link class="app-link" to="/sectors/linear-heat-detection">
                 linear heat detection
               </nuxt-link>
             </li>

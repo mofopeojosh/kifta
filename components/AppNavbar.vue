@@ -8,7 +8,7 @@
                 <ul :key="key" v-if="menu.children" class="dropdown-content child-dropdown-content absolute hidden text-white pt-1 menu-item-dropdown-wrapper">
                     <template v-for="(menuChild, index) in menu.children">
                         <li :key="'c-w-'+index" v-if="!menuChild.children"><nuxt-link class="font-semibold pr-4 block whitespace-no-wrap" :key="'g-link-'+index" :to="menuChild.path"> {{ menuChild.name }} </nuxt-link></li>
-                        
+
                         <li :key="'c-' + index" v-if="menuChild.children" class="dropdown">
                             <nuxt-link  class="font-semibold pr-4 block whitespace-no-wrap" :to="menuChild.path">{{ menuChild.name }}</nuxt-link>
                             <ul class="dropdown-content grand-child-dropdown-content absolute hidden pl-0 ml-33 -mt-10">
@@ -47,7 +47,8 @@
         @apply absolute items-center my-4 mt-10 pb-2 pt-2 rounded-b-md rounded-t-md shadow-md;
     }
    .dropdown:hover > .grand-child-dropdown-content {
-        @apply absolute items-center -mt-9 pb-2 pt-2 rounded-b-md rounded-t-md shadow-md;
+        margin: -2.25rem;
+        @apply absolute items-center pb-2 pt-2 rounded-b-md rounded-t-md shadow-md;
     }
     li {
         margin-top: 1px;

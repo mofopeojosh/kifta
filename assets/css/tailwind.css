@@ -24,7 +24,7 @@
   @apply bg-gray-100;
 }
 .bg-theme{
-  @apply bg-blue-400;
+  @apply bg-blue-600;
 }
 .text-dark{
   color: #151E29;

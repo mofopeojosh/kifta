@@ -1,7 +1,7 @@
 <template>
   <div class="app-footer pt-10 md:pt-20 block pl-5 pr-5">
     <section class="container">
-      <div class="text-center md:flex items-center md:justify-between py-6 px-4 md:p-16 bg-theme rounded-md mb-10">
+      <div class="text-center md:text-left md:flex items-center md:justify-between py-6 px-4 md:p-16 bg-theme rounded-md mb-10">
         <div>
           <h2 class="text-xl md:text-4xl leading-tight font-bold">
             We have what you are looking for.

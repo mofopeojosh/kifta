@@ -35,7 +35,7 @@
     <br>
     <p class="product-paragraph">
       The
-      <nuxt-link class="app-link" to="/product/maxview">
+      <nuxt-link class="app-link" to="/product/maxview-software">
         Maxview
       </nuxt-link>
       Horizon platform is a very versatile platform which provides information at all points along
