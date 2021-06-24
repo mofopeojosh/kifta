@@ -11,7 +11,7 @@
 
                         <li :key="'c-' + index" v-if="menuChild.children" class="dropdown">
                             <nuxt-link  class="font-semibold pr-4 block whitespace-no-wrap" :to="menuChild.path">{{ menuChild.name }}</nuxt-link>
-                            <ul class="dropdown-content grand-child-dropdown-content absolute hidden pl-0 ml-33 -mt-10">
+                            <ul class="dropdown-content grand-child-dropdown-content absolute hidden pl-0 -mt-10">
                                 <template v-for="(grandChild, g_index) in menuChild.children">
                                     <li :key="'grand-c-d-'+g_index"><nuxt-link :to="grandChild.path" class="px-4 block whitespace-no-wrap">{{ grandChild.name }}</nuxt-link></li>
                                 </template>
@@ -36,6 +36,9 @@
     };
 </script>
 <style scoped>
+    .grand-child-dropdown-content {
+      margin-left: 8.3rem!important;
+    }
    .dropdown:hover > .dropdown-content {
         display: block;
         z-index: 9999999;
